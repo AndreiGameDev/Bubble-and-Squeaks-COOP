@@ -23,12 +23,12 @@ public class FlowerLever : MonoBehaviour, IInteractable {
 
     public void Interact(PlayerRefferenceMaster player) {
         // Check if the flower's state should change based on the player's type
-        if(player.wizzardMagicType == PlayerRefferenceMaster.WizardType.Light && !isBloomed) {
+        if(player.wizzardMagicType == WizardType.Light && !isBloomed) {
             // Bloom the flower for a light wizard
             BloomFlower();
             Debug.Log("Blooming Flower");
             doorObject.DoorOpen();
-        } else if(player.wizzardMagicType == PlayerRefferenceMaster.WizardType.Dark && isBloomed) {
+        } else if(player.wizzardMagicType == WizardType.Dark && isBloomed) {
             // Unbloom the flower for a dark wizard
             UnbloomFlower();
             doorObject.DoorOpen();

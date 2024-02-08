@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerRefferenceMaster : MonoBehaviour
 {
-    public enum WizardType { Light, Dark }
+    
     public WizardType wizzardMagicType;
     
     public DirFacing dirFacing;
@@ -24,3 +24,4 @@ public class PlayerRefferenceMaster : MonoBehaviour
     }
 }
 public enum DirFacing { Up, Down, Right, Left }
+public enum WizardType { Light, Dark }
