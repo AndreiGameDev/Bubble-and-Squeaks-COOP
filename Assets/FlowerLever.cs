@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlowerLever : MonoBehaviour, IInteractable {
     public Sprite bloomedSprite;
     public Sprite unbloomedSprite;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     [SerializeField] private bool isBloomed;
     [SerializeField] private bool correctFlower;
     private DoorPuzzle doorObject;
