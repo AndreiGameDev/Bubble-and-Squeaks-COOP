@@ -19,10 +19,10 @@ public class MemoryPuzzleLevelManager : MonoBehaviour {
     void ShowCorrectLevers() {
         foreach(FlowerLever lever in doorPuzzleScript.levers) {
             switch(lever._correctState) {
-                case States.Bloomed:
+                case LeverStates.Illuminated:
                     lever.spriteRenderer.sprite = lever.bloomedSprite;
                     break;
-                case States.Withered:
+                case LeverStates.Withered:
                     lever.spriteRenderer.sprite = lever.witheredSprite;
                     break;
                 default:
