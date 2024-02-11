@@ -82,10 +82,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7f1afad555fc7468e4483f5437e456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloomedSprite: {fileID: 316340445, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
-  unbloomedSprite: {fileID: 985297560, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
-  isBloomed: 0
-  correctFlower: 0
+  correctState: 0
+  currentState: 0
+  bloomedSprite: {fileID: 747927803, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  witheredSprite: {fileID: 1492437110, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  defaultSprite: {fileID: 1913242175, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  spriteRenderer: {fileID: 9132240735778342859}
 --- !u!212 &9132240735778342859
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127,7 +129,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 985297560, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  m_Sprite: {fileID: 1913242175, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerRefferenceMaster : MonoBehaviour
 {
-    public enum WizardType { Light, Dark }
+    
     public WizardType wizzardMagicType;
     
     public DirFacing dirFacing;
@@ -12,6 +14,7 @@ public class PlayerRefferenceMaster : MonoBehaviour
     public PlayerSpellFireManager spellFireManager;
     public PlayerInteractManager interactManager;
     [SerializeField] private int playerIndex = 0;
+    public InputSystemUIInputModule inputSystemUIInputModule;
     
     public int GetPlayerIndex() {
         return playerIndex;
@@ -24,3 +27,4 @@ public class PlayerRefferenceMaster : MonoBehaviour
     }
 }
 public enum DirFacing { Up, Down, Right, Left }
+public enum WizardType { Light, Dark }
