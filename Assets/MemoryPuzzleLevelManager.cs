@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MemoryPuzzleLevelManager : MonoBehaviour
-{
+public class MemoryPuzzleLevelManager : MonoBehaviour {
     DoorPuzzle doorPuzzleScript;
     [SerializeField] float timeShowingCorrectLevers;
     private void Awake() {
@@ -19,16 +18,22 @@ public class MemoryPuzzleLevelManager : MonoBehaviour
     }
     void ShowCorrectLevers() {
         foreach(FlowerLever lever in doorPuzzleScript.levers) {
-            if(lever.isCorrectFlower) {
-                lever.spriteRenderer.sprite = lever.bloomedSprite;
+            switch(lever._correctState) {
+                case States.Bloomed:
+                    lever.spriteRenderer.sprite = lever.bloomedSprite;
+                    break;
+                case States.Withered:
+                    lever.spriteRenderer.sprite = lever.witheredSprite;
+                    break;
+                default:
+                    Debug.Log("You have a lever that the correct state is null");
+                    break;
             }
         }
     }
     void HideLevers() {
         foreach(FlowerLever lever in doorPuzzleScript.levers) {
-            if(lever.isCorrectFlower) {
-                lever.spriteRenderer.sprite = lever.unbloomedSprite;
-            }
+            lever.spriteRenderer.sprite = lever.defaultSprite;
         }
     }
 }
