@@ -15,6 +15,7 @@ public class PlayerInputHandler : MonoBehaviour
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+        DialogueManager.Instance.playerInputList.Add(playerInput);
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
         playerRefferenceMaster = PlayerRefferenceMasters.FirstOrDefault(m => m.GetPlayerIndex() == playerIndex);
@@ -22,7 +23,9 @@ public class PlayerInputHandler : MonoBehaviour
         playerSpellFireManager = playerRefferenceMaster.spellFireManager;
         playerInteractManager = playerRefferenceMaster.interactManager;
     }
-    
+    private void OnDisable() {
+        DialogueManager.Instance.playerInputList.Remove(playerInput);
+    }
     public void OnMovementInput(CallbackContext context)
     {
         if(playerMovementManagement != null) {

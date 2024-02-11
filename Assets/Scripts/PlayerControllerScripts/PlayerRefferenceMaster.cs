@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerRefferenceMaster : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class PlayerRefferenceMaster : MonoBehaviour
     public PlayerSpellFireManager spellFireManager;
     public PlayerInteractManager interactManager;
     [SerializeField] private int playerIndex = 0;
+    public InputSystemUIInputModule inputSystemUIInputModule;
     
     public int GetPlayerIndex() {
         return playerIndex;
