@@ -20,10 +20,10 @@ public class MemoryPuzzleLevelManager : MonoBehaviour {
         foreach(FlowerLever lever in doorPuzzleScript.levers) {
             switch(lever._correctState) {
                 case LeverStates.Illuminated:
-                    lever.spriteRenderer.sprite = lever.bloomedSprite;
+                    lever.ChangeModelBloom();
                     break;
                 case LeverStates.Withered:
-                    lever.spriteRenderer.sprite = lever.witheredSprite;
+                    lever.ChangeModelUnbloom();
                     break;
                 default:
                     Debug.Log("You have a lever that the correct state is null");
@@ -33,7 +33,7 @@ public class MemoryPuzzleLevelManager : MonoBehaviour {
     }
     void HideLevers() {
         foreach(FlowerLever lever in doorPuzzleScript.levers) {
-            lever.spriteRenderer.sprite = lever.defaultSprite;
+            lever.ChangeModelDefault();
         }
     }
 }
