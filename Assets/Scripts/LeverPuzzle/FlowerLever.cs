@@ -16,18 +16,13 @@ public class FlowerLever : MonoBehaviour, IInteractable {
         private set { currentState = value; }
     }
     [Header("Sprites")]
-    public Sprite bloomedSprite;
-    public Sprite witheredSprite;
-    public Sprite defaultSprite;
-    public SpriteRenderer spriteRenderer;
+    [SerializeField] GameObject bloomedGO;
+    [SerializeField] GameObject witheredGO;
+    [SerializeField] GameObject defaultGO;
 
     // Related to Door Puzzle script
     private DoorPuzzle doorObject;
     public DoorPuzzle doorPuzzle { get { return doorObject; } set { doorObject = value; } }
-    
-    void Awake() {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     public void Interact(PlayerRefferenceMaster player) {
         // Check if the flower's state should change based on the player's type
@@ -45,12 +40,30 @@ public class FlowerLever : MonoBehaviour, IInteractable {
 
     private void BloomFlower() {
         _currentState = LeverStates.Illuminated;
-        spriteRenderer.sprite = bloomedSprite;
+        ChangeModelBloom();
     }
 
     private void UnbloomFlower() {
         _currentState = LeverStates.Withered;
-        spriteRenderer.sprite = witheredSprite;
+        ChangeModelUnbloom();
+    }
+
+    public void ChangeModelBloom() {
+        defaultGO.SetActive(false);
+        bloomedGO.SetActive(true);
+        witheredGO.SetActive(false);
+    }
+
+    public void ChangeModelUnbloom() {
+        defaultGO.SetActive(false);
+        bloomedGO.SetActive(false);
+        witheredGO.SetActive(true);
+    }
+
+    public void ChangeModelDefault() {
+        defaultGO.SetActive(true);
+        bloomedGO.SetActive(false);
+        witheredGO.SetActive(false);
     }
 }
 
