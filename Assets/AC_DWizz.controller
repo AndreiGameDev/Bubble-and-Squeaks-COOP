@@ -50,7 +50,7 @@ BlendTree:
     m_DirectBlendParameter: MoveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0037d06a0e7f7a94e9a53c5fb4d74569, type: 2}
+    m_Motion: {fileID: 7400000, guid: eafcb5189cdb6d7409726cde7bb0f45b, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
