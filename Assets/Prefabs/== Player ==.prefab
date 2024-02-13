@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 1612996064896860388}
   - component: {fileID: 7269016727519656319}
   - component: {fileID: 7265871189915677639}
+  - component: {fileID: 7806871951647175793}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -545,12 +546,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06485915, y: 0.019084767}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &2561660513641381872
 GameObject:
+=======
+--- !u!95 &7806871951647175793
+Animator:
+  serializedVersion: 5
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8512098409842097050}
@@ -883,6 +891,22 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+=======
+  m_GameObject: {fileID: 2393873621381721557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc58cfbe2f01f5843b436ef8a0cf8043, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+>>>>>>> Stashed changes
 --- !u!1 &4308552336314957314
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +949,7 @@ GameObject:
   - component: {fileID: 3299153549973847436}
   - component: {fileID: 7789067145939073260}
   - component: {fileID: 7452039535906792325}
+  - component: {fileID: 4727642880461884791}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -1045,8 +1070,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06485915, y: 0.019084767}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &6300044011926530552
 GameObject:
+=======
+--- !u!95 &4727642880461884791
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234658976711787104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73a5879e1c0bce648b44f1de4425f1bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &2186096334862260557
+PrefabInstance:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1065,8 +1116,81 @@ GameObject:
 --- !u!4 &3829552400895555452
 Transform:
   m_ObjectHideFlags: 0
+<<<<<<< Updated upstream
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+=======
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8331859903343245452}
+    m_Modifications:
+    - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_Targets.Array.data[0].target
+      value: 
+      objectReference: {fileID: 7175743803155115571}
+    - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_Targets.Array.data[1].target
+      value: 
+      objectReference: {fileID: 7071538379441024544}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 531.9528
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 350.85547
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1722035
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741191305825570063, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_Name
+      value: CameraGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: orthographic size
+      value: 1.4793226
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+--- !u!4 &8825493100012865746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+  m_PrefabInstance: {fileID: 4387731030219358583}
+>>>>>>> Stashed changes
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6300044011926530552}
   serializedVersion: 2
