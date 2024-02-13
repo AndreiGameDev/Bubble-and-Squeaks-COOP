@@ -10,8 +10,10 @@ public class PlayerMovementManager : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 inputVector = Vector2.zero;
     PlayerRefferenceMaster playerRefMaster;
+    Animator anim;
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
     }
     private void Start() {
         playerRefMaster = GetComponent<PlayerRefferenceMaster>();
@@ -24,33 +26,33 @@ public class PlayerMovementManager : MonoBehaviour
 
     void Move() {
         if(inputVector != Vector2.zero) {
-            AnimationManager();
+            DirectionSetter();
             rb.velocity = inputVector * MoveSpeed;
         } else {
             rb.velocity = Vector2.zero;
         }
-
-        
     }
 
-    private void AnimationManager() {
+    private void DirectionSetter() {
         if(inputVector.y > 0.5) {
-            // Play animation Up
             playerRefMaster.dirFacing = DirFacing.Up;
         } else if(inputVector.y < -.5) {
-            // Play Animation Down
             playerRefMaster.dirFacing = DirFacing.Down;
         } else if(inputVector.x < -.5) {
-            // PlayAnimation Left
             playerRefMaster.dirFacing = DirFacing.Left;
         } else if(inputVector.x > 0.5) {
-            // Play Animation Right
             playerRefMaster.dirFacing = DirFacing.Right;
         }
     }
 
+    void AnimationProperties() {
+        anim.SetFloat("MoveX", inputVector.x);
+        anim.SetFloat("MoveY", inputVector.y);
+    }
+
     void Update() {
         Move();
+        AnimationProperties();
     }
     
 

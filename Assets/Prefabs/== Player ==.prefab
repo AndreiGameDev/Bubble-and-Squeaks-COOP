@@ -734,6 +734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraGO
       objectReference: {fileID: 0}
+    - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: orthographic size
+      value: 1.536955
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
