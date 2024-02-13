@@ -9,4 +9,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(destination);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("Player has left the game");
+    }
 }
