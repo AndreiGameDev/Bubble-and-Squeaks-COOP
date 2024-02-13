@@ -347,67 +347,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &184726641
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6156858250037725348, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434352554961366184, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: m_Name
-      value: TriggerNextZone (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6459134009571714197, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
-      propertyPath: nextSceneName
-      value: MushroomLevel
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
 --- !u!4 &246829495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5970105790978942139, guid: 6bf03e5c9c6b4b24b99e6a2671cd7e6b, type: 3}
@@ -782,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2129445523394478299, guid: 398673aa3c2250546bca5852588029c9, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I shall provide you on instructions for this level
+      value: I shall provide you with instructions for this level
       objectReference: {fileID: 0}
     - target: {fileID: 2129445523394478299, guid: 398673aa3c2250546bca5852588029c9, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
@@ -11580,7 +11519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6459134009571714197, guid: 412b6270149fcae4e9417d5e253d87f5, type: 3}
       propertyPath: nextSceneName
-      value: MushroomLevel
+      value: DoorPuzzle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -115230,5 +115169,4 @@ SceneRoots:
   - {fileID: 1792747620}
   - {fileID: 552191351}
   - {fileID: 1239430125}
-  - {fileID: 184726641}
   - {fileID: 417101578}
