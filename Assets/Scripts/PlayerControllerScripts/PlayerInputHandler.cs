@@ -14,6 +14,7 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInteractManager playerInteractManager;
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         playerInput = GetComponent<PlayerInput>();
         DialogueManager.Instance.playerInputList.Add(playerInput);
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
@@ -44,4 +45,5 @@ public class PlayerInputHandler : MonoBehaviour
             playerInteractManager.hasInteracted = context.ReadValueAsButton();
         }
     }
+
 }
