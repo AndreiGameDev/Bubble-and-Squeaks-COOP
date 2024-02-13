@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dirFacing: 0
-  projectileSpeed: 1
+  projectileSpeed: 0.5
 --- !u!114 &2944951711564647645
 MonoBehaviour:
   m_ObjectHideFlags: 0

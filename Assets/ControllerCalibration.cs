@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ControllerCalibration : MonoBehaviour
 {
@@ -16,8 +17,9 @@ public class ControllerCalibration : MonoBehaviour
         if(inputManager.playerCount == 0) {
             ControllerRecalibration();
         }
+    
     }
-
+    
     public void ControllerRecalibration() {
         Time.timeScale = 0;
         controllerCalibrationScreen.SetActive(true);

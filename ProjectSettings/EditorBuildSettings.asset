@@ -8,16 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menus.unity
     guid: 3f7853192bd04624f8166ac43cfb8122
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/DialogueSceneTest.unity
     guid: db7477fe9d994264cb065a40c47d00ff
   - enabled: 1
-    path: Assets/Scenes/DoorPuzzle.unity
+    path: Assets/Scenes/DoorPuzzle1.unity
     guid: 1b1938a5e7ff0b64191d496637637dcd
   - enabled: 1
     path: Assets/Scenes/MemoryPuzzle.unity
     guid: 47f8126fe656b81469df2dd0a66b9a54
+  - enabled: 1
+    path: Assets/Scenes/Menus.unity
+    guid: 3156e555d25244e4fbce1b2f52b8cd42
+  - enabled: 1
+    path: Assets/Scenes/MushroomLevel.unity
+    guid: 4b4000ce2d918e84e8b8b712e1d0a580
   m_configObjects: {}

@@ -7,12 +7,15 @@ public class MenuScript : MonoBehaviour
 {
     public void ChangeScene(string destination)
     {
-        SceneManager.LoadScene(destination);
+        if(Time.timeScale > 0) {
+            SceneManager.LoadScene(destination);
+        }
     }
 
     public void Quit()
     {
-        Application.Quit();
-        Debug.Log("Player has left the game");
+        if(Time.timeScale > 0) {
+            Application.Quit();
+        }
     }
 }
