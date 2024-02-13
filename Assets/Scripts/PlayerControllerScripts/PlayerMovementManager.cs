@@ -27,6 +27,7 @@ public class PlayerMovementManager : MonoBehaviour
     void Move() {
         if(inputVector != Vector2.zero) {
             DirectionSetter();
+            AnimationProperties();
             rb.velocity = inputVector * MoveSpeed;
         } else {
             rb.velocity = Vector2.zero;
@@ -52,7 +53,6 @@ public class PlayerMovementManager : MonoBehaviour
 
     void Update() {
         Move();
-        AnimationProperties();
     }
     
 

@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 1612996064896860388}
   - component: {fileID: 7269016727519656319}
   - component: {fileID: 7265871189915677639}
+  - component: {fileID: 828030188480407967}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -450,6 +451,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06485915, y: 0.019084767}
   m_EdgeRadius: 0
+--- !u!95 &828030188480407967
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2393873621381721557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc58cfbe2f01f5843b436ef8a0cf8043, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4308552336314957314
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +514,7 @@ GameObject:
   - component: {fileID: 3299153549973847436}
   - component: {fileID: 7789067145939073260}
   - component: {fileID: 7452039535906792325}
+  - component: {fileID: 3644070796320873838}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -612,6 +635,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06485915, y: 0.019084767}
   m_EdgeRadius: 0
+--- !u!95 &3644070796320873838
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234658976711787104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73a5879e1c0bce648b44f1de4425f1bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2186096334862260557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -690,6 +734,14 @@ PrefabInstance:
       propertyPath: m_Targets.Array.data[1].target
       value: 
       objectReference: {fileID: 7071538379441024544}
+    - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -532.4488
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -356.76047
+      objectReference: {fileID: 0}
     - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 531.9528
@@ -736,7 +788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: orthographic size
-      value: 1.536955
+      value: 1.2562498
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
