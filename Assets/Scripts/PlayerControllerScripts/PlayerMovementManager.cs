@@ -24,12 +24,7 @@ public class PlayerMovementManager : MonoBehaviour
 
     void Move() {
         if(inputVector != Vector2.zero) {
-<<<<<<< Updated upstream
-           
-=======
-            DirectionSetter();
-            AnimationProperties();
->>>>>>> Stashed changes
+            AnimationManager();
             rb.velocity = inputVector * MoveSpeed;
         } else {
             rb.velocity = Vector2.zero;
@@ -56,11 +51,6 @@ public class PlayerMovementManager : MonoBehaviour
 
     void Update() {
         Move();
-        AnimationManager();
-<<<<<<< Updated upstream
-=======
-        
->>>>>>> Stashed changes
     }
     
 
