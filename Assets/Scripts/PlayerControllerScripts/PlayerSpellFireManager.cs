@@ -11,15 +11,17 @@ public class PlayerSpellFireManager : MonoBehaviour
     [SerializeField] Transform spellSpawnPos;
     [SerializeField] float cooldownCasting = 1f;
     [SerializeField] bool canCast = true;
+    [SerializeField] GameObject spellGameObject;
     private void Start() {
         playerRefMaster = GetComponent<PlayerRefferenceMaster>();
     }
     void OnFire() {
-        if(hasFired && canCast) {
+        if(hasFired && canCast && spellGameObject == null) {
             Debug.Log("HasFired");
             StartCoroutine(Cooldown());
-            GameObject spellFired = Instantiate(spell, spellSpawnPos.position, Quaternion.identity);
-            ProjectileComponent spellFiredProperties = spellFired.GetComponent<ProjectileComponent>();
+            spellGameObject = Instantiate(spell, spellSpawnPos.position, Quaternion.identity);
+            ProjectileComponent spellFiredProperties = spellGameObject.GetComponent<ProjectileComponent>();
+            spellFiredProperties.player = playerRefMaster;
             spellFiredProperties.dirFacing = playerRefMaster.dirFacing;
         }
     }
