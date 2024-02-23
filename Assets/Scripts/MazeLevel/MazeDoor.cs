@@ -11,37 +11,23 @@ public class MazeDoor : MonoBehaviour, IInteractable {
         masterDoorManager = GetComponentInParent<MasterMazeDoorScript>();
     }
     public void Interact(PlayerRefferenceMaster player) {
-        switch(requireBothAttributes) {
-            case true:
-                if(masterDoorManager.hasAnyDoorOpened == false) {
-                    switch(player.wizzardMagicType) {
-                        case WizardType.Light:
-                            if(lightActivated == false) {
-                                lightActivated = true;
-                                StartCoroutine(ActivationWindow(WizardType.Light));
-                            }
-                            break;
-                        case WizardType.Dark:
-                            if(darkActivated == false) {
-                                darkActivated = true;
-                                StartCoroutine(ActivationWindow(WizardType.Dark));
-                            }
-                            break;
-                    }
-                    if(lightActivated == true && darkActivated == true) {
-                        masterDoorManager.hasAnyDoorOpened = true;
-                        // Master Boolean set to true so we can't open the other door once you've been through.
-                        gameObject.SetActive(false); // Here there should be an animation player which would open the door instead of this and disabling the collision
-                    }
-                }
-                break;
-            case false:
-                if(player.wizzardMagicType == type && masterDoorManager.hasAnyDoorOpened == false) {
-                    masterDoorManager.hasAnyDoorOpened = true;
-                    // Master Boolean set to true so we can't open the other door once you've been through.
-                    gameObject.SetActive(false); // Here there should be an animation player which would open the door instead of this and disabling the collision
-                }
-                break;
+        if(requireBothAttributes && !masterDoorManager.hasAnyDoorOpened) {
+            if(player.wizzardMagicType == WizzardType.Light && !lightActivated) {
+                lightActivated = true;
+                StartCoroutine(ActivationWindow(WizardType.Light));
+            } else if(player.wizzardMagicType == WizzardType.Dark && !darkActivated) {
+                darkActivated = true;
+                StartCoroutine(ActivationWindow(WizardType.Dark));
+            }
+            if(lightActivated == true && darkActivated == true) {
+                masterDoorManager.hasAnyDoorOpened = true;
+                // Master Boolean set to true so we can't open the other door once you've been through.
+                gameObject.SetActive(false); // Here there should be an animation player which would open the door instead of this and disabling the collision
+            }
+        } else if(player.wizzardMagicType == type && masterDoorManager.hasAnyDoorOpened == false) {
+            masterDoorManager.hasAnyDoorOpened = true;
+            // Master Boolean set to true so we can't open the other door once you've been through.
+            gameObject.SetActive(false); // Here there should be an animation player which would open the door instead of this and disabling the collision
         }
     }
 
