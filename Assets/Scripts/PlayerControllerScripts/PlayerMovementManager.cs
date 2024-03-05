@@ -26,10 +26,12 @@ public class PlayerMovementManager : MonoBehaviour
 
     void Move() {
         if(inputVector != Vector2.zero) {
+            anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
             rb.velocity = inputVector * MoveSpeed;
         } else {
+            anim.SetBool("IsIdle", true);
             rb.velocity = Vector2.zero;
         }
     }

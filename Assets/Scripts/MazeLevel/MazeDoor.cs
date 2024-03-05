@@ -12,10 +12,10 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     }
     public void Interact(PlayerRefferenceMaster player) {
         if(requireBothAttributes && !masterDoorManager.hasAnyDoorOpened) {
-            if(player.wizzardMagicType == WizzardType.Light && !lightActivated) {
+            if(player.wizzardMagicType == WizardType.Light && !lightActivated) {
                 lightActivated = true;
                 StartCoroutine(ActivationWindow(WizardType.Light));
-            } else if(player.wizzardMagicType == WizzardType.Dark && !darkActivated) {
+            } else if(player.wizzardMagicType == WizardType.Dark && !darkActivated) {
                 darkActivated = true;
                 StartCoroutine(ActivationWindow(WizardType.Dark));
             }

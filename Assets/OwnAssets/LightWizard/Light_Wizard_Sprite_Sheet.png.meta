@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3160211d539432040ab2d3e2b8bc2f7c
+guid: 5b001bf9b62b1cb458d15168de7a2430
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_0
+      name: Light_Wizard_Sprite_Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 163073fb85a79bd43ab6b7189fc94c8a
-      internalID: -1532580717
+      spriteID: c819c90b5546ada4da41667e8bdc7fd3
+      internalID: 78963456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_1
+      name: Light_Wizard_Sprite_Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f781ddb1bc4b7924b907c5a1fd1fb38b
-      internalID: -1756402632
+      spriteID: 04275f8bad9132e4986916aef9bbc05e
+      internalID: -189433216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_2
+      name: Light_Wizard_Sprite_Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2649864e284730e41af3f3e8c17e5d49
-      internalID: -1863024647
+      spriteID: e4f2fe1a89653234199c28c746fd124b
+      internalID: 1880654783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_3
+      name: Light_Wizard_Sprite_Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9215d7ef14ba314282746e7872c5d11
-      internalID: 1491081897
+      spriteID: c2b28594273a7cb40ad4cb9ee1f195b3
+      internalID: 1155406144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_4
+      name: Light_Wizard_Sprite_Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4141aa714d66ad045b8da23242632cd8
-      internalID: 262123077
+      spriteID: da4243b574625274a815b3304112277f
+      internalID: 1967785496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_5
+      name: Light_Wizard_Sprite_Sheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a8d283da8888244e8b210ad9d020e0e
-      internalID: -106575643
+      spriteID: b5bd8d68fb2d03347b731bcd14aaccaa
+      internalID: 636065130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_6
+      name: Light_Wizard_Sprite_Sheet_6
       rect:
         serializedVersion: 2
         x: 384
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e351b297296271049adfa27ddac8a583
-      internalID: -1407500028
+      spriteID: 15443201bd3c6e345b4ca464c199c7bd
+      internalID: -968459165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_7
+      name: Light_Wizard_Sprite_Sheet_7
       rect:
         serializedVersion: 2
         x: 448
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f25f1b9d504cb524dab7386de87a25f3
-      internalID: 1663153449
+      spriteID: 2bac0675825119640a9d6edea2a8c0b4
+      internalID: -444168072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_8
+      name: Light_Wizard_Sprite_Sheet_8
       rect:
         serializedVersion: 2
         x: 512
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c66ed6d07dc36b429c850072c8a5801
-      internalID: -886834778
+      spriteID: 2d008b2863f15ea478ff073d0dd892be
+      internalID: -1826522049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_9
+      name: Light_Wizard_Sprite_Sheet_9
       rect:
         serializedVersion: 2
         x: 576
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bae60690c0d2504fbd9e0357140f686
-      internalID: -730988978
+      spriteID: a56edce2c3b651545be70e6c8dd7d4dc
+      internalID: -1456884897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_10
+      name: Light_Wizard_Sprite_Sheet_10
       rect:
         serializedVersion: 2
         x: 640
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad94a35d918459a4cbc70a121218f11c
-      internalID: 762830006
+      spriteID: bd0e1b8a8cec67745ba1df4438794f73
+      internalID: 1352074565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark_Wizard_Sprite_Sheet-removebg-preview_11
+      name: Light_Wizard_Sprite_Sheet_11
       rect:
         serializedVersion: 2
         x: 704
@@ -368,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a91e349580c834e9b691dcdd6b4d6d
-      internalID: -2023424957
+      spriteID: ebf4f2258ccb42d41ac68a29012656f3
+      internalID: -39640485
       vertices: []
       indices: 
       edges: []
@@ -385,18 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dark_Wizard_Sprite_Sheet-removebg-preview_0: -1532580717
-      Dark_Wizard_Sprite_Sheet-removebg-preview_1: -1756402632
-      Dark_Wizard_Sprite_Sheet-removebg-preview_10: 762830006
-      Dark_Wizard_Sprite_Sheet-removebg-preview_11: -2023424957
-      Dark_Wizard_Sprite_Sheet-removebg-preview_2: -1863024647
-      Dark_Wizard_Sprite_Sheet-removebg-preview_3: 1491081897
-      Dark_Wizard_Sprite_Sheet-removebg-preview_4: 262123077
-      Dark_Wizard_Sprite_Sheet-removebg-preview_5: -106575643
-      Dark_Wizard_Sprite_Sheet-removebg-preview_6: -1407500028
-      Dark_Wizard_Sprite_Sheet-removebg-preview_7: 1663153449
-      Dark_Wizard_Sprite_Sheet-removebg-preview_8: -886834778
-      Dark_Wizard_Sprite_Sheet-removebg-preview_9: -730988978
+      Light_Wizard_Sprite_Sheet_0: 78963456
+      Light_Wizard_Sprite_Sheet_1: -189433216
+      Light_Wizard_Sprite_Sheet_10: 1352074565
+      Light_Wizard_Sprite_Sheet_11: -39640485
+      Light_Wizard_Sprite_Sheet_2: 1880654783
+      Light_Wizard_Sprite_Sheet_3: 1155406144
+      Light_Wizard_Sprite_Sheet_4: 1967785496
+      Light_Wizard_Sprite_Sheet_5: 636065130
+      Light_Wizard_Sprite_Sheet_6: -968459165
+      Light_Wizard_Sprite_Sheet_7: -444168072
+      Light_Wizard_Sprite_Sheet_8: -1826522049
+      Light_Wizard_Sprite_Sheet_9: -1456884897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
