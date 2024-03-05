@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: A_LWizzIdle
+  m_Name: A_DWizzIdleLeft
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1827229234, guid: deb5f365b6955864f84d2b2a6ff6e5bd, type: 3}
+      value: {fileID: -1540435891, guid: ef41ae1cac61d5945af89180a7fa2b84, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1827229234, guid: deb5f365b6955864f84d2b2a6ff6e5bd, type: 3}
+    - {fileID: -1540435891, guid: ef41ae1cac61d5945af89180a7fa2b84, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

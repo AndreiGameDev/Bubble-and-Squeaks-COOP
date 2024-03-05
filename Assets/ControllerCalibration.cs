@@ -11,13 +11,13 @@ public class ControllerCalibration : MonoBehaviour
     [SerializeField]GameObject controllerCalibrationScreen;
     [SerializeField] TextMeshProUGUI player1Status;
     [SerializeField] TextMeshProUGUI player2Status;
+    [SerializeField] bool isTesting = false;
     private void Awake() {
         inputManager = GetComponent<PlayerInputManager>();
         DontDestroyOnLoad(gameObject);
         if(inputManager.playerCount == 0) {
             ControllerRecalibration();
         }
-    
     }
     
     public void ControllerRecalibration() {
@@ -28,7 +28,7 @@ public class ControllerCalibration : MonoBehaviour
     }
 
     public void ControllerJoined() {
-        if(inputManager.playerCount == 2) {
+        if(inputManager.playerCount == 2 || isTesting) {
             inputManager.enabled = false;
             controllerCalibrationScreen.SetActive(false);
             Time.timeScale = 1;
