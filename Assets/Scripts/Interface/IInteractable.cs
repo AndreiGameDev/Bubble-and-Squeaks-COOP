@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IInteractable {
-    void Interact(PlayerRefferenceMaster player);
+    void Interact(PlayerRefferenceMaster player, DirFacing? direction = null);
 }

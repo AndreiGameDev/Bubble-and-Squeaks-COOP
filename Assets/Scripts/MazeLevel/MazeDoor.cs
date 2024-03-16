@@ -10,7 +10,7 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     private void Awake() {
         masterDoorManager = GetComponentInParent<MasterMazeDoorScript>();
     }
-    public void Interact(PlayerRefferenceMaster player) {
+    public void Interact(PlayerRefferenceMaster player, DirFacing? direction = null) {
         if(requireBothAttributes && !masterDoorManager.hasAnyDoorOpened) {
             if(player.wizzardMagicType == WizardType.Light && !lightActivated) {
                 lightActivated = true;
