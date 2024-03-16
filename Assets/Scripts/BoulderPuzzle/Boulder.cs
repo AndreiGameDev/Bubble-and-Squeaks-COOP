@@ -52,4 +52,15 @@ public class Boulder : MonoBehaviour, IInteractable {
             rb.velocity = Vector2.zero;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.CompareTag("PressurePoint")) {
+            BoulderLevelManager.Instance.PressurePointUpdate(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision) {
+        if(collision.CompareTag("PressurePoint")) {
+            BoulderLevelManager.Instance.PressurePointUpdate(false);
+        }
+    }
 }

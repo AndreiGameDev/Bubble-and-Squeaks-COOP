@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6486723838260202415}
   - component: {fileID: 8108346083802884388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dark Ball Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8551665246994272603}
   - component: {fileID: -4019361857181750600}
   - component: {fileID: -169538367482192547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dark Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
