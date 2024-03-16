@@ -10,7 +10,7 @@ public class BeanSproutPuzzle : MonoBehaviour , IInteractable
         animator = GetComponent<Animator>();
     }
 
-    public void Interact(PlayerRefferenceMaster player) {
+    public void Interact(PlayerRefferenceMaster player, DirFacing? direction = null) {
         if(player.wizzardMagicType == WizardType.Light && canInteract) {
             Grow();
         } else if (player.wizzardMagicType == WizardType.Dark && canInteract) {

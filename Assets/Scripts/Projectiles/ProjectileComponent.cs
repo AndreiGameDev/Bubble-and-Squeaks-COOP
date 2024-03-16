@@ -34,7 +34,7 @@ public class ProjectileComponent : MonoBehaviour
         if(spellInteraction != null) {
             Destroy(gameObject);
             Debug.Log("Colliding");
-            spellInteraction.Interact(player);
+            spellInteraction.Interact(player, dirFacing);
         } else {
             Destroy(gameObject);
         }
