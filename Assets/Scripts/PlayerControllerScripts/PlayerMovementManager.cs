@@ -11,6 +11,9 @@ public class PlayerMovementManager : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     PlayerRefferenceMaster playerRefMaster;
     Animator anim;
+
+    [SerializeField] GameObject targetDistanceGO;
+    [SerializeField] Vector2 maxDistanceApart;
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
@@ -25,7 +28,7 @@ public class PlayerMovementManager : MonoBehaviour
     }
 
     void Move() {
-        if(inputVector != Vector2.zero) {
+        if(inputVector != Vector2.zero && Vector3.Distance(transform.position, targetDistanceGO.transform.position) <= 2) {
             anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
