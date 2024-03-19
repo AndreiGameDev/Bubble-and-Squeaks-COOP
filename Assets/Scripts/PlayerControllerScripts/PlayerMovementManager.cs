@@ -32,12 +32,20 @@ public class PlayerMovementManager : MonoBehaviour
             anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
-            if(Vector3.Distance(transform.position, targetDistanceGO.transform.position) <= 4) {
+
+            // Calculate the distance between the future position and the target distance game object
+            float distanceToTarget = Vector3.Distance(transform.position, targetDistanceGO.transform.position);
+
+            // Check if the player will be within the threshold distance of 4 units after two steps
+            if(distanceToTarget <= 3) {
+                // If the future position is within the threshold distance, allow the player to move towards it
                 rb.velocity = inputVector * MoveSpeed;
             } else {
-                rb.AddForceAtPosition(-inputVector * (MoveSpeed * 1.5f), transform.position, ForceMode2D.Impulse);
+                // If the future position would exceed the threshold distance, calculate a new movement vector towards the target
+                Vector3 directionToTarget = (targetDistanceGO.transform.position - transform.position).normalized;
+                rb.velocity = directionToTarget * (MoveSpeed* 4);
             }
-            
+
         } else {
             anim.SetBool("IsIdle", true);
             rb.velocity = Vector2.zero;
