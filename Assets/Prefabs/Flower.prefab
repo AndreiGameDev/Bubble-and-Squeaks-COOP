@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1913242175, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df9ab3f1331ad854192db6f2dc70d7d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 747927803, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52d8a3eb445da084fbb30b196069c284, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1492437110, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9355af8138c25b44398f50b1cf396ce5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -341,10 +341,6 @@ MonoBehaviour:
   bloomedGO: {fileID: 2699635682229468049}
   witheredGO: {fileID: 5350519329423093200}
   defaultGO: {fileID: 909416902206455216}
-  bloomedSprite: {fileID: 747927803, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
-  witheredSprite: {fileID: 1492437110, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
-  defaultSprite: {fileID: 1913242175, guid: 6d0be3888f646c648a14b1bc602ac64b, type: 3}
-  spriteRenderer: {fileID: 0}
 --- !u!58 &1927084100032381649
 CircleCollider2D:
   m_ObjectHideFlags: 0
