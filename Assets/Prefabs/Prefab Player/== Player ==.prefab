@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b58c8a65277283439ce4f0670c77e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 1
+  MoveSpeed: 1.5
   targetDistanceGO: {fileID: 2080119367819957711}
   maxDistanceApart: {x: 0, y: 0}
 --- !u!114 &7508142573863678986
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b58c8a65277283439ce4f0670c77e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 1
+  MoveSpeed: 1.5
   targetDistanceGO: {fileID: 199515855602975102}
   maxDistanceApart: {x: 0, y: 0}
 --- !u!114 &644399212749515448
@@ -686,11 +686,11 @@ PrefabInstance:
       objectReference: {fileID: 7071538379441024544}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -532.09283
+      value: -532.4488
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -353.60046
+      value: -356.76047
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -742,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: orthographic size
-      value: 1.9003843
+      value: 1.2562498
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

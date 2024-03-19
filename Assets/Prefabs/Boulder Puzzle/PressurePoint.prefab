@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7877222619538124352}
   - component: {fileID: 6804412962473988000}
   - component: {fileID: 6647959917260240500}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PressurePoint
   m_TagString: PressurePoint
   m_Icon: {fileID: 0}

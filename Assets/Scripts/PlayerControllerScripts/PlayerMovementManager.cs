@@ -37,7 +37,7 @@ public class PlayerMovementManager : MonoBehaviour
             float distanceToTarget = Vector3.Distance(transform.position, targetDistanceGO.transform.position);
 
             // Check if the player will be within the threshold distance of 4 units after two steps
-            if(distanceToTarget <= 3) {
+            if(distanceToTarget <= 5) {
                 // If the future position is within the threshold distance, allow the player to move towards it
                 rb.velocity = inputVector * MoveSpeed;
             } else {

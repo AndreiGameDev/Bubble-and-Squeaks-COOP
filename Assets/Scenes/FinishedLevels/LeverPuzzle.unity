@@ -17990,6 +17990,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 149d9d26ce4b67e4cbf197dd530a7f99, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: bc35b65a82e518249842b74f6d0638cc, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1433
     m_Data: {fileID: -1651773849, guid: 310b1cdc4d9618641aa6c98c7e650c58, type: 3}
@@ -18005,6 +18007,8 @@ Tilemap:
     m_Data: {fileID: 621768665, guid: 38fd6ac8d153ca242bde5681b392c5de, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 100479469, guid: 38fd6ac8d153ca242bde5681b392c5de, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 1464
     m_Data:
@@ -18031,7 +18035,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -32, y: -30, z: 0}
-  m_Size: {x: 56, y: 56, z: 1}
+  m_Size: {x: 56, y: 65, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -18565,7 +18569,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
