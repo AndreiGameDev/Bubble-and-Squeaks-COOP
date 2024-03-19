@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 1
+  targetDistanceGO: {fileID: 2080119367819957711}
+  maxDistanceApart: {x: 0, y: 0}
 --- !u!114 &7508142573863678986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 1
+  targetDistanceGO: {fileID: 199515855602975102}
+  maxDistanceApart: {x: 0, y: 0}
 --- !u!114 &644399212749515448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +407,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &7265871189915677639
@@ -587,7 +591,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &7452039535906792325
@@ -682,11 +686,11 @@ PrefabInstance:
       objectReference: {fileID: 7071538379441024544}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -531.8502
+      value: -532.09283
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -351.2508
+      value: -353.60046
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -738,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: orthographic size
-      value: 1.6702317
+      value: 1.9003843
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

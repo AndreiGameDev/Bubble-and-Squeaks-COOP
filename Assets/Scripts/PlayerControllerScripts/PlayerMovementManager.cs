@@ -11,6 +11,9 @@ public class PlayerMovementManager : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     PlayerRefferenceMaster playerRefMaster;
     Animator anim;
+
+    [SerializeField] GameObject targetDistanceGO;
+    [SerializeField] Vector2 maxDistanceApart;
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
@@ -25,11 +28,16 @@ public class PlayerMovementManager : MonoBehaviour
     }
 
     void Move() {
-        if(inputVector != Vector2.zero) {
+        if(inputVector != Vector2.zero ) {
             anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
-            rb.velocity = inputVector * MoveSpeed;
+            if(Vector3.Distance(transform.position, targetDistanceGO.transform.position) <= 4) {
+                rb.velocity = inputVector * MoveSpeed;
+            } else {
+                rb.AddForceAtPosition(-inputVector * (MoveSpeed * 1.5f), transform.position, ForceMode2D.Impulse);
+            }
+            
         } else {
             anim.SetBool("IsIdle", true);
             rb.velocity = Vector2.zero;
