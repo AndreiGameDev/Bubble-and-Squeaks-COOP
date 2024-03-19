@@ -28,11 +28,16 @@ public class PlayerMovementManager : MonoBehaviour
     }
 
     void Move() {
-        if(inputVector != Vector2.zero && Vector3.Distance(transform.position, targetDistanceGO.transform.position) <= 2) {
+        if(inputVector != Vector2.zero ) {
             anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
-            rb.velocity = inputVector * MoveSpeed;
+            if(Vector3.Distance(transform.position, targetDistanceGO.transform.position) <= 4) {
+                rb.velocity = inputVector * MoveSpeed;
+            } else {
+                rb.AddForceAtPosition(-inputVector * MoveSpeed / 2, transform.position, ForceMode2D.Impulse);
+            }
+            
         } else {
             anim.SetBool("IsIdle", true);
             rb.velocity = Vector2.zero;
