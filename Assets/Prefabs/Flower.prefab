@@ -261,9 +261,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293982388298544683}
-  - component: {fileID: 4219490779906313746}
   - component: {fileID: 725761076990915741}
-  - component: {fileID: 1927084100032381649}
+  - component: {fileID: 5744942460199058864}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -289,41 +288,6 @@ Transform:
   - {fileID: 2356018627107924053}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &4219490779906313746
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659498372045342271}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05
 --- !u!114 &725761076990915741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,8 +305,8 @@ MonoBehaviour:
   bloomedGO: {fileID: 2699635682229468049}
   witheredGO: {fileID: 5350519329423093200}
   defaultGO: {fileID: 909416902206455216}
---- !u!58 &1927084100032381649
-CircleCollider2D:
+--- !u!61 &5744942460199058864
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -370,9 +334,19 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.075015366, y: -0.09292948}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Size: {x: 0.5364721, y: 0.52751505}
+  m_EdgeRadius: 0
