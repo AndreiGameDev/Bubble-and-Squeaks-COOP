@@ -450,7 +450,7 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Lost Forest Entrence,
     sentences:
-    - Solve the  riddles to find the exites.
+    - Solve the riddles to find the exites.
     - "It can not be seen whenever it's there\r"
     - "\rIt fills up a room, it's much like the air.\r\n"
     - "\rIt can not be touched, there's nothing to hear"
@@ -37276,7 +37276,7 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Lost Forest Entrence,
     sentences:
-    - combine both powers, to exite this tower
+    - combine both powers, to exit this dungeon
 --- !u!212 &1982750061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37423,15 +37423,9 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Lost Forest Entrence,
     sentences:
-    - 'In shadows I dwell, yet guide your way,
-
-      Through murky paths, I silently
-      sway.'
-    - 'Before you stand, two paths unknown,
-
-      Listen to my silence, and find
-      your own.'
-    - What am I?
+    - You use multiple forms of mine at night,
+    - I show you the path you seek for in the darkest times,
+    - What could I be?
 --- !u!212 &2033856951
 SpriteRenderer:
   m_ObjectHideFlags: 0
