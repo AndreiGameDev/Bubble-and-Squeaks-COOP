@@ -7,6 +7,9 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     [SerializeField] bool requireBothAttributes;
     [SerializeField] bool lightActivated;
     [SerializeField] bool darkActivated;
+
+    [SerializeField] GameObject combinedDoor;
+    [SerializeField] GameObject combinedDoorActivationWindow;
     private void Awake() {
         masterDoorManager = GetComponentInParent<MasterMazeDoorScript>();
     }
@@ -32,12 +35,18 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     }
 
     IEnumerator ActivationWindow(WizardType typeToManage) {
+        combinedDoorActivationWindow.SetActive(true);
+        combinedDoor.SetActive(false);
         yield return new WaitForSecondsRealtime(3);
         switch(typeToManage) {
             case WizardType.Light:
+                combinedDoorActivationWindow.SetActive(false);
+                combinedDoor.SetActive(true);
                 lightActivated = false;
                 break;
             case WizardType.Dark:
+                combinedDoorActivationWindow.SetActive(false);
+                combinedDoor.SetActive(true);
                 darkActivated = false;
                 break;
         }
