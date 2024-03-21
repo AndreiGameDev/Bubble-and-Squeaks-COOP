@@ -7,6 +7,7 @@ public class ProjectileComponent : MonoBehaviour
     public DirFacing dirFacing;
     [SerializeField] private float projectileSpeed = 1f;
     Rigidbody2D rb;
+    public PlayerRefferenceMaster player;
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -29,11 +30,14 @@ public class ProjectileComponent : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        ISpellInteraction spellInteraction = collision.GetComponent<ISpellInteraction>();
+        IInteractable spellInteraction = collision.GetComponent<IInteractable>();
         if(spellInteraction != null) {
             Destroy(gameObject);
             Debug.Log("Colliding");
-            spellInteraction.SpellInteraction();
+            spellInteraction.Interact(player, dirFacing);
+        } else {
+            Destroy(gameObject);
         }
     }
+
 }

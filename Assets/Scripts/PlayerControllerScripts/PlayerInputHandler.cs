@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerInputHandler : MonoBehaviour
@@ -14,8 +15,19 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInteractManager playerInteractManager;
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         playerInput = GetComponent<PlayerInput>();
         DialogueManager.Instance.playerInputList.Add(playerInput);
+
+        LoadVariables();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        LoadVariables();
+    }
+
+    void LoadVariables() {
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
         playerRefferenceMaster = PlayerRefferenceMasters.FirstOrDefault(m => m.GetPlayerIndex() == playerIndex);
@@ -44,4 +56,5 @@ public class PlayerInputHandler : MonoBehaviour
             playerInteractManager.hasInteracted = context.ReadValueAsButton();
         }
     }
+
 }

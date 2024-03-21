@@ -24,7 +24,7 @@ public class FlowerLever : MonoBehaviour, IInteractable {
     private DoorPuzzle doorObject;
     public DoorPuzzle doorPuzzle { get { return doorObject; } set { doorObject = value; } }
 
-    public void Interact(PlayerRefferenceMaster player) {
+    public void Interact(PlayerRefferenceMaster player, DirFacing? direction = null) {
         // Check if the flower's state should change based on the player's type
         if(player.wizzardMagicType == WizardType.Light && currentState != LeverStates.Illuminated) {
             // Bloom the flower for a light wizard
