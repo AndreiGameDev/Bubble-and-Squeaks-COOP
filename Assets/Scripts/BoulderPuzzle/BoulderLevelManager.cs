@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BoulderLevelManager : MonoBehaviour
 {
     [SerializeField]int pressurePointsHeld;
     [SerializeField] int pressurePoints;
     public static BoulderLevelManager Instance;
+    [SerializeField] UnityEvent openDoor;
     private void Awake() {
         Instance = this;
         pressurePoints = GameObject.FindGameObjectsWithTag("PressurePoint").Length;
@@ -24,7 +26,7 @@ public class BoulderLevelManager : MonoBehaviour
 
     public void CanOpenDoor() {
         if(pressurePointsHeld == pressurePoints) {
-            Debug.Log("Open Door");
+            openDoor.Invoke();
         }
     }
 }
