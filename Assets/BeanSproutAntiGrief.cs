@@ -8,11 +8,10 @@ public class BeanSproutAntiGrief : MonoBehaviour
     private void Awake() {
         masterScript = GetComponentInParent<BeanSproutPuzzle>();
     }
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision) {
         masterScript.canInteract = false;
     }
-
-    private void OnCollisionExit2D(Collision2D collision) {
+    private void OnTriggerExit2D(Collider2D collision) {
         masterScript.canInteract = true;
     }
 }
