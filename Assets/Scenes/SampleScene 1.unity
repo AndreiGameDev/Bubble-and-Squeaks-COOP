@@ -17225,6 +17225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 323708748608821802, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6663563928499807993, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_Name
       value: BeanSprout
