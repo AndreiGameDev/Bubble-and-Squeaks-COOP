@@ -3118,6 +3118,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7373515415936732200, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
+      propertyPath: orthographic size
+      value: 1.6707741
+      objectReference: {fileID: 0}
     - target: {fileID: 8331859903343245452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7723781
@@ -17231,7 +17235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.378
+      value: 0.393
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.z
