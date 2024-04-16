@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1178777842400106136}
   - component: {fileID: 1778829357961494584}
   - component: {fileID: 3348782938358008826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AntiGrief
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,10 +98,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 191
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5586770376369120984}
   - component: {fileID: 8357432437405899342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5480909088618096941}
   - component: {fileID: 6627686671155621847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
