@@ -54245,6 +54245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boulder
       objectReference: {fileID: 0}
+    - target: {fileID: 1079177312223179931, guid: 7fdda23b9c9c6334087b7bf52bfd8e0c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4978464518347985279, guid: 7fdda23b9c9c6334087b7bf52bfd8e0c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -75412,9 +75416,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1079590372432247364, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1420332779680016380, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_Name
       value: == Player ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768540336409181318, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3829552400895555452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -75430,7 +75442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7373515415936732200, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: orthographic size
-      value: 1.1678863
+      value: 1.0275868
       objectReference: {fileID: 0}
     - target: {fileID: 8331859903343245452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.x
