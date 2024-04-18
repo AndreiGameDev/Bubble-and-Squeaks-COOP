@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 
@@ -13,6 +14,8 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerMovementManager playerMovementManagement;
     private PlayerSpellFireManager playerSpellFireManager;
     private PlayerInteractManager playerInteractManager;
+
+    private InputSystemUIInputModule uiInput;
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -21,12 +24,16 @@ public class PlayerInputHandler : MonoBehaviour
 
         LoadVariables();
         SceneManager.sceneLoaded += OnSceneLoaded;
+        uiInput = FindAnyObjectByType<InputSystemUIInputModule>();
+        playerInput.uiInputModule = uiInput;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         LoadVariables();
     }
-
+    public void TakeControlOverInput() {
+        uiInput.actionsAsset = playerInput.actions;
+    }
     void LoadVariables() {
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
