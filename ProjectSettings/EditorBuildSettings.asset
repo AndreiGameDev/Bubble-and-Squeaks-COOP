@@ -27,9 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FinishedLevels/LeverPuzzle.unity
     guid: fea28b3f1014207479fe72044ac9873d
   - enabled: 1
-    path: Assets/Scenes/Block Push Level.unity
+    path: Assets/Scenes/FinishedLevels/Block Push Level.unity
     guid: 0ea2943e58c63c941bb9ee950c51c251
   - enabled: 1
-    path: Assets/Scenes/Bonus Level.unity
+    path: Assets/Scenes/FinishedLevels/Bonus Level.unity
     guid: 8bb568cbe62a0514b9664feb787ae2cf
   m_configObjects: {}
