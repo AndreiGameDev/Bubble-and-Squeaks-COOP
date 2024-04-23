@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-
+//Implemented by Andrei
 public class VolumeSettings : MonoBehaviour {
     [SerializeField] AudioMixer masterMixer;
     [SerializeField] Slider MasterVolumeSlider;
