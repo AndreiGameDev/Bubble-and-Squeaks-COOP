@@ -7,10 +7,11 @@ public class PlayerLevelScenes : MonoBehaviour
     [SerializeField] int[] playerLevelSceneIndexes;
 
     private void Awake() {
-        if(instance == null) {
-            instance = this;
+        if(instance != null && instance != this) {
+            Destroy(this.gameObject);
         } else {
-            Destroy(gameObject);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 

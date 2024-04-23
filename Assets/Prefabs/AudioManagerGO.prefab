@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 3536355275077547373}
   sfx: {fileID: 3234023676443789136}
-  M_MainMenu: {fileID: 0}
-  M_Game: {fileID: 0}
+  M_MainMenu: {fileID: 8300000, guid: ea73e8aeadf465a498c2ac482aaf9453, type: 3}
+  M_Game: {fileID: 8300000, guid: 6491ef257a78d1b489c6c848df47c6df, type: 3}
 --- !u!1 &6350296224743465125
 GameObject:
   m_ObjectHideFlags: 0

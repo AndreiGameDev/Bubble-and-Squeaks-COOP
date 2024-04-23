@@ -9,27 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Menus.unity
     guid: 3156e555d25244e4fbce1b2f52b8cd42
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/DialogueSceneTest.unity
-    guid: db7477fe9d994264cb065a40c47d00ff
-  - enabled: 1
-    path: Assets/Scenes/FinishedLevels/DoorPuzzle.unity
-    guid: 1b1938a5e7ff0b64191d496637637dcd
-  - enabled: 1
-    path: Assets/Scenes/MemoryPuzzle.unity
-    guid: 47f8126fe656b81469df2dd0a66b9a54
-  - enabled: 1
-    path: Assets/Scenes/FinishedLevels/MushroomLevel.unity
-    guid: 53510b48e7ef6f347aed8382c5a25d5e
-  - enabled: 1
-    path: Assets/Scenes/FinishedLevels/LeverPuzzle.unity
-    guid: fea28b3f1014207479fe72044ac9873d
+    path: Assets/Scenes/FinishedLevels/Town Level.unity
+    guid: 975f6359cda771e4199311efaf217f41
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/Block Push Level.unity
     guid: 0ea2943e58c63c941bb9ee950c51c251
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/Bonus Level.unity
     guid: 8bb568cbe62a0514b9664feb787ae2cf
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/DoorPuzzle.unity
+    guid: 1b1938a5e7ff0b64191d496637637dcd
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/LeverPuzzle.unity
+    guid: fea28b3f1014207479fe72044ac9873d
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/MushroomLevel.unity
+    guid: 53510b48e7ef6f347aed8382c5a25d5e
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/Tutorial Level.unity
+    guid: be5910d429e080244b67eae664ddcdb4
   m_configObjects: {}
