@@ -4,17 +4,16 @@ using UnityEngine;
 public class DialogueCanvasAnimation : MonoBehaviour {
     [SerializeField]Transform backgroundBlurr;
     [SerializeField]Transform dialogueBox;
-    [SerializeField] 
     private void OnEnable() {
         StartCoroutine(AnimationAppear());
-    }
+    } // When enabled play animation
 
     IEnumerator AnimationAppear() {
         dialogueBox.localScale = Vector3.zero;
         StartCoroutine(BackgroundBlurrAppear());
         StartCoroutine(DialogueBoxAppear());
         yield return null;
-    }
+    } // Animation Coroutine Process
 
     IEnumerator BackgroundBlurrAppear() {
         Vector3 endPos = new Vector3(0, -1080, 0);
@@ -27,7 +26,7 @@ public class DialogueCanvasAnimation : MonoBehaviour {
             yield return null;
         }
         backgroundBlurr.localPosition = Vector3.zero;
-    }
+    } // This is the black background 
 
     IEnumerator DialogueBoxAppear() {
         float time = 0;
@@ -38,5 +37,5 @@ public class DialogueCanvasAnimation : MonoBehaviour {
             time += Time.deltaTime / duration;
             yield return null;
         }
-    }
+    } // Dialogue Animation
 }

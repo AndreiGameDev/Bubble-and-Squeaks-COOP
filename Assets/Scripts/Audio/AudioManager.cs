@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //Implemented by Andrei
@@ -25,21 +26,23 @@ public class AudioManager : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
     }
-    //private void Start() {
-    //    SceneManager.activeSceneChanged += OnSceneChange;
-    //}
+    private void Start() {
+        SceneManager.activeSceneChanged += OnSceneChange;
+    }
     public void PlaySFX(AudioClip clip) {
         sfx.PlayOneShot(clip);
     }
-    //void OnSceneChange(Scene currentScene, Scene nextScene) {
-    //    foreach(int i in PlayerLevelScenes.instance.GetPlayerLevelScenes()) {
-    //        if(nextScene.buildIndex == i) {
-    //            music.clip = M_Game;
-    //            music.Play();
-    //        } else {
-    //            music.clip = M_MainMenu;
-    //            music.Play();
-    //        }
-    //    }
-    //}
+    void OnSceneChange(Scene currentScene, Scene nextScene) {
+        foreach(int i in PlayerLevelScenes.instance.GetPlayerLevelScenes()) {
+            if(nextScene.buildIndex == i) {
+                if(PlayerLevelScenes.instance.GetPlayerLevelScenes().Contains(currentScene.buildIndex) && music.clip != M_Game) {
+                    music.clip = M_Game;
+                    music.Play();
+                }
+            } else {
+                music.clip = M_MainMenu;
+                music.Play();
+            }
+        }
+    }
 }

@@ -25,13 +25,13 @@ public class DialogueManager : MonoBehaviour {
 
     public List<PlayerInput> playerInputList;
     private void Awake() {
-        if(instance == null) { 
+        if(instance != null && instance != this) {
+            Destroy(this.gameObject);
+        } else {
             instance = this;
             DontDestroyOnLoad(gameObject);
-        } else {
-            Destroy(gameObject);
         }
-          
+
         speakerSentences = new Queue<string>();
     }
 
@@ -44,12 +44,12 @@ public class DialogueManager : MonoBehaviour {
         }
 
         DisplayNextSentence();
-        // go in dialogue mode
+        // Go in dialogue mode
         foreach(PlayerInput playerInput in playerInputList) {
             playerInput.SwitchCurrentActionMap("UI");
         }
         dialogueCanvasGO.SetActive(true);
-    }
+    } // When player interacts, it loads the sentences and switches player input to UI Mode
 
     public void DisplayNextSentence() {
         if(speakerSentences.Count == 0) {
@@ -58,12 +58,12 @@ public class DialogueManager : MonoBehaviour {
         }
         string sentence =  speakerSentences.Dequeue();
         speakerSentenceUI.text = sentence;
-    }
+    } // Updates ui to next sentence, ends dialogue if no more sentences to display
     
     void EndDialogue() {
         dialogueCanvasGO.SetActive(false);
         foreach(PlayerInput playerInput in playerInputList) {
             playerInput.SwitchCurrentActionMap("Player");
         }
-    }
+    } // Hides UI and goes back to normal input mode
 }
