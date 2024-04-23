@@ -115,7 +115,7 @@ MonoBehaviour:
   spellSpawnPos: {fileID: 6295951135776399190}
   cooldownCasting: 1
   canCast: 1
-  spellGameObject: {fileID: 0}
+  SFX_SpellCast: {fileID: 8300000, guid: 69ba2284ac962b24e8ec75957c305d2c, type: 3}
 --- !u!114 &4114568259411530323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   spellSpawnPos: {fileID: 7411944065067557324}
   cooldownCasting: 1
   canCast: 1
-  spellGameObject: {fileID: 0}
+  SFX_SpellCast: {fileID: 8300000, guid: 69ba2284ac962b24e8ec75957c305d2c, type: 3}
 --- !u!114 &4695017096900686506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 702868862251611659, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.172203
+      value: -12.672203
       objectReference: {fileID: 0}
     - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_Targets.Array.data[0].target
@@ -686,15 +686,15 @@ PrefabInstance:
       objectReference: {fileID: 7071538379441024544}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -532.4488
+      value: -531.8502
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -356.76047
+      value: -351.2508
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.172203
+      value: -12.672203
       objectReference: {fileID: 0}
     - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -742,7 +742,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: orthographic size
-      value: 1.2562498
+      value: 1.3190322
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018471838703693359, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -531.6387
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018471838703693359, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1593585
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

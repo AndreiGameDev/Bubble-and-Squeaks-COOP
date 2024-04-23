@@ -9,22 +9,24 @@ public class PlayerSpellFireManager : MonoBehaviour
     [SerializeField] Transform spellSpawnPos;
     [SerializeField] float cooldownCasting = 1f;
     [SerializeField] bool canCast = true;
-    [SerializeField] GameObject spellGameObject;
-    private void Start() {
+    AudioManager audioManager;
+    [SerializeField] AudioClip SFX_SpellCast;
+    private void Start() { // Grabs references
         playerRefMaster = GetComponent<PlayerRefferenceMaster>();
+        audioManager = AudioManager.Instance;
     }
-    void OnFire() {
-        if(hasFired && canCast && spellGameObject == null) {
-            Debug.Log("HasFired");
+    void OnFire() { // Fires projectile and depending on the player's magic property it will assign automatically Light or Dark
+        if(hasFired && canCast) {
             StartCoroutine(Cooldown());
-            spellGameObject = Instantiate(spell, spellSpawnPos.position, Quaternion.identity);
-            ProjectileComponent spellFiredProperties = spellGameObject.GetComponent<ProjectileComponent>();
+            audioManager.PlaySFX(SFX_SpellCast);
+            GameObject tempObject = Instantiate(spell, spellSpawnPos.position, Quaternion.identity);
+            ProjectileComponent spellFiredProperties = tempObject.GetComponent<ProjectileComponent>();
             spellFiredProperties.player = playerRefMaster;
             spellFiredProperties.dirFacing = playerRefMaster.dirFacing;
         }
     }
 
-    IEnumerator Cooldown() {
+    IEnumerator Cooldown() { // Puts it on cooldown
         canCast = false;    
         yield return new WaitForSecondsRealtime(cooldownCasting);
         canCast = true;

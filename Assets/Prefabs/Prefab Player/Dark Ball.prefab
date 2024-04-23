@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dirFacing: 0
-  projectileSpeed: 1
+  projectileSpeed: 2
   player: {fileID: 0}
 --- !u!58 &-169538367482192547
 CircleCollider2D:

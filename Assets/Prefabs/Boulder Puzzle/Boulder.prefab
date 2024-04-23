@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b144ca4569b27b447add751f686b97ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SFX_BoulderPushed: {fileID: 8300000, guid: df61b3d0cbb5732478744454355e4d47, type: 3}
   speed: 2
 --- !u!50 &2302742927057243600
 Rigidbody2D:

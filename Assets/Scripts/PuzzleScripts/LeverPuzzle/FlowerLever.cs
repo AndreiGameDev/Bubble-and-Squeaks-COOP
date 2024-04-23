@@ -17,11 +17,16 @@ public class FlowerLever : MonoBehaviour, IInteractable {
     [SerializeField] GameObject bloomedGO;
     [SerializeField] GameObject witheredGO;
     [SerializeField] GameObject defaultGO;
-
+    [Header("Audio")]
+    AudioManager audioManager;
+    [SerializeField]AudioClip SFX_Wither;
+    [SerializeField]AudioClip SFX_Bloom;
     // Related to Door Puzzle script
     private DoorPuzzle doorObject;
     public DoorPuzzle doorPuzzle { get { return doorObject; } set { doorObject = value; } }
-
+    private void Start() {
+        audioManager = AudioManager.Instance;
+    }
     public void Interact(PlayerRefferenceMaster player, DirFacing? direction = null) {
         // Check if the flower's state should change based on the player's type
         if(player.wizzardMagicType == WizardType.Light && currentState != LeverStates.Illuminated) {
@@ -37,15 +42,18 @@ public class FlowerLever : MonoBehaviour, IInteractable {
     }
 
     private void BloomFlower() {
+        audioManager.PlaySFX(SFX_Bloom);
         _currentState = LeverStates.Illuminated;
         ChangeModelBloom();
     }
 
     private void UnbloomFlower() {
+        audioManager.PlaySFX(SFX_Wither);
         _currentState = LeverStates.Withered;
         ChangeModelUnbloom();
     }
 
+    // Changes model
     public void ChangeModelBloom() {
         defaultGO.SetActive(false);
         bloomedGO.SetActive(true);
@@ -56,12 +64,6 @@ public class FlowerLever : MonoBehaviour, IInteractable {
         defaultGO.SetActive(false);
         bloomedGO.SetActive(false);
         witheredGO.SetActive(true);
-    }
-
-    public void ChangeModelDefault() {
-        defaultGO.SetActive(true);
-        bloomedGO.SetActive(false);
-        witheredGO.SetActive(false);
     }
 }
 

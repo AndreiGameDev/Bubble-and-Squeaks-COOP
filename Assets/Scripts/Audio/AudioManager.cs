@@ -25,21 +25,21 @@ public class AudioManager : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
     }
-    private void Start() {
-        SceneManager.activeSceneChanged += OnSceneChange;
-    }
+    //private void Start() {
+    //    SceneManager.activeSceneChanged += OnSceneChange;
+    //}
     public void PlaySFX(AudioClip clip) {
         sfx.PlayOneShot(clip);
     }
-    void OnSceneChange(Scene currentScene, Scene nextScene) {
-        foreach(int i in PlayerLevelScenes.instance.GetPlayerLevelScenes()) {
-            if(nextScene.buildIndex == i) {
-                music.clip = M_Game;
-                music.Play();
-            } else {
-                music.clip = M_MainMenu;
-                music.Play();
-            }
-        }
-    }
+    //void OnSceneChange(Scene currentScene, Scene nextScene) {
+    //    foreach(int i in PlayerLevelScenes.instance.GetPlayerLevelScenes()) {
+    //        if(nextScene.buildIndex == i) {
+    //            music.clip = M_Game;
+    //            music.Play();
+    //        } else {
+    //            music.clip = M_MainMenu;
+    //            music.Play();
+    //        }
+    //    }
+    //}
 }

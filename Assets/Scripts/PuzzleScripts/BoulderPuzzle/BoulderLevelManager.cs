@@ -7,9 +7,15 @@ public class BoulderLevelManager : MonoBehaviour
     [SerializeField] int pressurePoints;
     public static BoulderLevelManager Instance;
     [SerializeField] UnityEvent openDoor;
+    AudioManager audioManager;
+    [SerializeField] AudioClip SFX_OpenDoor;
     private void Awake() {
         Instance = this;
         pressurePoints = GameObject.FindGameObjectsWithTag("PressurePoint").Length;
+    }
+
+    private void Start() {
+        audioManager = AudioManager.Instance;
     }
 
     public void PressurePointUpdate(bool Increase) {
@@ -24,6 +30,7 @@ public class BoulderLevelManager : MonoBehaviour
 
     public void CanOpenDoor() {
         if(pressurePointsHeld == pressurePoints) {
+            audioManager.PlaySFX(SFX_OpenDoor);
             openDoor.Invoke();
         }
     }
