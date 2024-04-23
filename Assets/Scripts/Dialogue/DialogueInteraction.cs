@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+//Implemented by Andrei
 public class DialogueInteraction : MonoBehaviour, IInteractable
 {
     public Dialogue dialogue;

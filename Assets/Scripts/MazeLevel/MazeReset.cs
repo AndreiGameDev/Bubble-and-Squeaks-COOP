@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//Implemented by Andrei
 public class MazeReset : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision) {

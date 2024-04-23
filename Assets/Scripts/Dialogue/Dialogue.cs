@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Implemented by Andrei
 [System.Serializable]
 public class Dialogue {
     public string dialogueOwner;

@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
-
+//Implemented by Andrei
 public class ControllerCalibration : MonoBehaviour
 {
     PlayerInputManager inputManager;

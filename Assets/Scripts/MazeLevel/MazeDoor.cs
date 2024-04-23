@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//Implemented by Andrei
 public class MazeDoor : MonoBehaviour, IInteractable {
     MasterMazeDoorScript masterDoorManager;
     [SerializeField] WizardType type;

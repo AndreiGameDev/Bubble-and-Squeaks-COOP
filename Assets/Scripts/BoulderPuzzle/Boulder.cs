@@ -1,7 +1,6 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-
+//Implemented by Andrei
 public class Boulder : MonoBehaviour, IInteractable {
     Rigidbody2D rb;
     

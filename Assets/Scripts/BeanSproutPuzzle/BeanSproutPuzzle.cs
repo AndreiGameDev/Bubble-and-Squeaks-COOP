@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Implemented by Andrei
 public class BeanSproutPuzzle : MonoBehaviour , IInteractable
 {
     Animator animator;

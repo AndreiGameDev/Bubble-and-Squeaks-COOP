@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+//Implemented by Andrei
 public interface IInteractable {
     void Interact(PlayerRefferenceMaster player, DirFacing? direction = null);
 }

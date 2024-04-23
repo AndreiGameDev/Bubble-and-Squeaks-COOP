@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+//Implemented by Andrei
 public class MemoryPuzzleLevelManager : MonoBehaviour {
     DoorPuzzle doorPuzzleScript;
     [SerializeField] float timeShowingCorrectLevers;

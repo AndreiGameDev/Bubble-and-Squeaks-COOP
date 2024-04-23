@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
-
+//Implemented by Andrei
 public class DialogueCanvasAnimation : MonoBehaviour {
     [SerializeField]Transform backgroundBlurr;
     [SerializeField]Transform dialogueBox;

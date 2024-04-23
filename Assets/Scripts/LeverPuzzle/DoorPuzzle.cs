@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+//Implemented by Andrei
 public class DoorPuzzle : MonoBehaviour
 {
     public List<FlowerLever> levers = new List<FlowerLever>();

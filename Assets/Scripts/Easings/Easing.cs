@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-
+//Andrei's easing library
 public class Easing {
     public static float Linear(float t) {
         return t;

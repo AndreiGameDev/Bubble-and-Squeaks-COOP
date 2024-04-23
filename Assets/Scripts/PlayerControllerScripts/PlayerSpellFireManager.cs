@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//Implemented by Andrei
 public class PlayerSpellFireManager : MonoBehaviour
 {
     public bool hasFired;
