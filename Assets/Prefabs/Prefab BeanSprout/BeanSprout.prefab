@@ -409,6 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canInteract: 1
   colliderHolder: {fileID: 6250710902516567620}
+  SFX_Bloom: {fileID: 8300000, guid: 98978d03242e2ed4c9e5efa57b9a9a05, type: 3}
+  SFX_Wither: {fileID: 8300000, guid: 0ffd66801525f7c40803f826978a9bef, type: 3}
 --- !u!61 &2902800226743997042
 BoxCollider2D:
   m_ObjectHideFlags: 0

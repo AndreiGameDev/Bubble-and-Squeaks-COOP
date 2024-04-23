@@ -3,12 +3,15 @@ using UnityEngine;
 //Implemented by Andrei
 public class Boulder : MonoBehaviour, IInteractable {
     Rigidbody2D rb;
-    
+    AudioManager audioManager;
+    [SerializeField]AudioClip SFX_BoulderPushed;
     [SerializeField] float speed = 4;
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    private void Start() {
+        audioManager = AudioManager.Instance;
+    }
     IEnumerator MoveBoulder(DirFacing direction, WizardType magicType, bool hasRunAlready) {
         if(gameObject.layer != LayerMask.NameToLayer("Obstacles")) {
             gameObject.layer = LayerMask.NameToLayer("Obstacles");
@@ -55,6 +58,7 @@ public class Boulder : MonoBehaviour, IInteractable {
         if(!direction.HasValue) {
             Debug.LogError("Error, no direction input");
         } else {
+            audioManager.PlaySFX(SFX_BoulderPushed);
             Debug.Log("Push");
             StartCoroutine(MoveBoulder(direction.Value, player.wizzardMagicType, false));
         }

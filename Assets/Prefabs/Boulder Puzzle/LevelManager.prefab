@@ -46,3 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressurePointsHeld: 0
   pressurePoints: 0
+  openDoor:
+    m_PersistentCalls:
+      m_Calls: []
+  SFX_OpenDoor: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
