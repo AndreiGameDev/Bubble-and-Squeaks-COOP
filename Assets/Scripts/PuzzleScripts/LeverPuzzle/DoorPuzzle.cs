@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 //Implemented by Andrei
 public class DoorPuzzle : MonoBehaviour
 {
     public List<FlowerLever> levers = new List<FlowerLever>();
     public Transform FlowerHolder;
     [SerializeField] int correctLeversPulled;
+    public UnityEvent doorOpen;
     private void Start() {
         for(int i = 0; i < FlowerHolder.childCount; i++) {
             FlowerLever flowerLever = FlowerHolder.GetChild(i).GetComponent<FlowerLever>();
@@ -23,7 +25,7 @@ public class DoorPuzzle : MonoBehaviour
             }
         }
         if(correctLeversPulled == levers.Count) {
-            gameObject.SetActive(false);
+            doorOpen.Invoke();
         } else {
             correctLeversPulled = 0;
         }

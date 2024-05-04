@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 //Implemented by Andrei
 public class MazeDoor : MonoBehaviour, IInteractable {
     MasterMazeDoorScript masterDoorManager;
@@ -7,9 +8,9 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     [SerializeField] bool requireBothAttributes;
     [SerializeField] bool lightActivated;
     [SerializeField] bool darkActivated;
-
-    [SerializeField] GameObject combinedDoor;
-    [SerializeField] GameObject combinedDoorActivationWindow;
+    public UnityEvent openDoor;
+    public UnityEvent combinedDoorActivating;
+    public UnityEvent combinedDoorDeactivated;
     AudioManager audioManager;
     [SerializeField] AudioClip SFX_OpenDoor;
     [SerializeField] AudioClip SFX_ActivationWindowOpen;
@@ -22,9 +23,9 @@ public class MazeDoor : MonoBehaviour, IInteractable {
     }
     public void Interact(PlayerRefferenceMaster player, DirFacing? direction = null) {
         // Checks for which type of door the player is interacting with
-        if(requireBothAttributes && !masterDoorManager.hasAnyDoorOpened) { 
+        if(requireBothAttributes && !masterDoorManager.hasAnyDoorOpened & lightActivated == true && darkActivated == true) { 
             ActivateDoorOpenWindow(player);
-            ChecksIfCanOpenSpecialDoor();
+            OpenDoor();
         } else if(player.wizzardMagicType == type && masterDoorManager.hasAnyDoorOpened == false) {
             OpenDoor();
         }
@@ -37,11 +38,6 @@ public class MazeDoor : MonoBehaviour, IInteractable {
         audioManager.PlaySFX(SFX_OpenDoor);
     }
 
-    private void ChecksIfCanOpenSpecialDoor() {
-        if(lightActivated == true && darkActivated == true) {
-            OpenDoor();
-        }
-    } 
 
     private void ActivateDoorOpenWindow(PlayerRefferenceMaster player) {
         if(player.wizzardMagicType == WizardType.Light && !lightActivated) {
@@ -55,20 +51,17 @@ public class MazeDoor : MonoBehaviour, IInteractable {
         }
     } // Activates Door Open Window
 
-    IEnumerator ActivationWindow(WizardType typeToManage) { 
-        combinedDoorActivationWindow.SetActive(true);
-        combinedDoor.SetActive(false);
+    IEnumerator ActivationWindow(WizardType typeToManage) {
+        combinedDoorActivating.Invoke();
         yield return new WaitForSecondsRealtime(3);
         switch(typeToManage) {
             case WizardType.Light:
-                combinedDoorActivationWindow.SetActive(false);
-                combinedDoor.SetActive(true);
+                combinedDoorDeactivated.Invoke();
                 lightActivated = false;
                 audioManager.PlaySFX(SFX_ActivationWindowOver);
                 break;
             case WizardType.Dark:
-                combinedDoorActivationWindow.SetActive(false);
-                combinedDoor.SetActive(true);
+                combinedDoorDeactivated.Invoke();
                 darkActivated = false;
                 audioManager.PlaySFX(SFX_ActivationWindowOver);
                 break;

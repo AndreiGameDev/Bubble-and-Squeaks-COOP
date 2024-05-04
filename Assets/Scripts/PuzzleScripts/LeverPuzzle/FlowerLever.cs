@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 //Implemented by Andrei
 public class FlowerLever : MonoBehaviour, IInteractable {
     [Header("States")]
@@ -13,14 +14,14 @@ public class FlowerLever : MonoBehaviour, IInteractable {
         get { return currentState; }
         private set { currentState = value; }
     }
-    [Header("Sprites")]
-    [SerializeField] GameObject bloomedGO;
-    [SerializeField] GameObject witheredGO;
-    [SerializeField] GameObject defaultGO;
+
     [Header("Audio")]
     AudioManager audioManager;
     [SerializeField]AudioClip SFX_Wither;
     [SerializeField]AudioClip SFX_Bloom;
+
+    public UnityEvent ChangeFlowerBloom;
+    public UnityEvent ChangeFlowerWither;
     // Related to Door Puzzle script
     private DoorPuzzle doorObject;
     public DoorPuzzle doorPuzzle { get { return doorObject; } set { doorObject = value; } }
@@ -44,26 +45,13 @@ public class FlowerLever : MonoBehaviour, IInteractable {
     private void BloomFlower() {
         audioManager.PlaySFX(SFX_Bloom);
         _currentState = LeverStates.Illuminated;
-        ChangeModelBloom();
+        ChangeFlowerBloom.Invoke();
     }
 
     private void UnbloomFlower() {
         audioManager.PlaySFX(SFX_Wither);
         _currentState = LeverStates.Withered;
-        ChangeModelUnbloom();
-    }
-
-    // Changes model
-    public void ChangeModelBloom() {
-        defaultGO.SetActive(false);
-        bloomedGO.SetActive(true);
-        witheredGO.SetActive(false);
-    }
-
-    public void ChangeModelUnbloom() {
-        defaultGO.SetActive(false);
-        bloomedGO.SetActive(false);
-        witheredGO.SetActive(true);
+        ChangeFlowerWither.Invoke();
     }
 }
 

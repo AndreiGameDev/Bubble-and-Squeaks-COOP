@@ -1,18 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem.UI;
 //Implemented by Andrei
-public class PlayerRefferenceMaster : MonoBehaviour
-{
-    
+public class PlayerRefferenceMaster : MonoBehaviour {
+
     public WizardType wizzardMagicType;
-    
+
     public DirFacing dirFacing;
-    public PlayerMovementManager movementManager;
-    public PlayerSpellFireManager spellFireManager;
-    public PlayerInteractManager interactManager;
+    [HideInInspector] public PlayerMovementManager movementManager;
+    [HideInInspector] public PlayerSpellFireManager spellFireManager;
+    [HideInInspector] public PlayerInteractManager interactManager;
     [SerializeField] private int playerIndex = 0;
     public InputSystemUIInputModule inputSystemUIInputModule;
-    
+
     public int GetPlayerIndex() {
         return playerIndex;
     }

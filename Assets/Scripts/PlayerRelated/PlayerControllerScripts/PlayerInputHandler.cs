@@ -5,8 +5,7 @@ using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 //Implemented by Andrei
-public class PlayerInputHandler : MonoBehaviour
-{
+public class PlayerInputHandler : MonoBehaviour {
     private PlayerInput playerInput;
     private PlayerRefferenceMaster playerRefferenceMaster;
     private PlayerMovementManager playerMovementManagement;
@@ -14,8 +13,7 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInteractManager playerInteractManager;
 
     private InputSystemUIInputModule uiInput;
-    private void Awake()
-    {
+    private void Awake() {
         DontDestroyOnLoad(this);
         playerInput = GetComponent<PlayerInput>();
         DialogueManager.Instance.playerInputList.Add(playerInput);
@@ -43,8 +41,7 @@ public class PlayerInputHandler : MonoBehaviour
     private void OnDisable() {
         DialogueManager.Instance.playerInputList.Remove(playerInput);
     }
-    public void OnMovementInput(CallbackContext context)
-    {
+    public void OnMovementInput(CallbackContext context) {
         if(playerMovementManagement != null) {
             playerMovementManagement.SetMovementDir(context.ReadValue<Vector2>());
         }

@@ -1,14 +1,16 @@
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //Implemented by Andrei
 public class MazeReset : MonoBehaviour
 {
+    [SerializeField]List<SceneAsset> MazeScenes;    
     private void OnCollisionEnter2D(Collision2D collision) {
-        // Check for layer or tag instead of whatever here once we can optimise
-        PlayerRefferenceMaster player = collision.collider.GetComponentInParent<PlayerRefferenceMaster>();
-        if(player != null) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            // Might want to trigger some reset animations or something as well to juice it up..
+        PlayerRefferenceMaster player = null;
+        if(collision.transform.TryGetComponent<PlayerRefferenceMaster>(out player)) {
+            int scene = Random.Range(0, MazeScenes.Count);
+            SceneManager.LoadScene(MazeScenes[scene].name);
         }
     }
 }

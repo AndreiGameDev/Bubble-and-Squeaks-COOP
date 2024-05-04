@@ -101,6 +101,75 @@ MonoBehaviour:
   darkActivated: 0
   combinedDoor: {fileID: 5372800443472353075}
   combinedDoorActivationWindow: {fileID: 6078245501752872087}
+  openDoor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3761233554875195478}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  combinedDoorActivating:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5372800443472353075}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6078245501752872087}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  combinedDoorDeactivated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5372800443472353075}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6078245501752872087}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   SFX_OpenDoor: {fileID: 0}
   SFX_ActivationWindowOpen: {fileID: 0}
   SFX_ActivationWindowOver: {fileID: 0}
@@ -253,6 +322,27 @@ MonoBehaviour:
   darkActivated: 0
   combinedDoor: {fileID: 0}
   combinedDoorActivationWindow: {fileID: 0}
+  openDoor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4372022222279866789}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  combinedDoorActivating:
+    m_PersistentCalls:
+      m_Calls: []
+  combinedDoorDeactivated:
+    m_PersistentCalls:
+      m_Calls: []
   SFX_OpenDoor: {fileID: 0}
   SFX_ActivationWindowOpen: {fileID: 0}
   SFX_ActivationWindowOver: {fileID: 0}
@@ -401,7 +491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7338699244150007462
 Transform:
   m_ObjectHideFlags: 0
@@ -573,6 +663,27 @@ MonoBehaviour:
   darkActivated: 0
   combinedDoor: {fileID: 0}
   combinedDoorActivationWindow: {fileID: 0}
+  openDoor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8728153532347946876}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  combinedDoorActivating:
+    m_PersistentCalls:
+      m_Calls: []
+  combinedDoorDeactivated:
+    m_PersistentCalls:
+      m_Calls: []
   SFX_OpenDoor: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
   SFX_ActivationWindowOpen: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
   SFX_ActivationWindowOver: {fileID: 8300000, guid: 0ffd66801525f7c40803f826978a9bef, type: 3}
