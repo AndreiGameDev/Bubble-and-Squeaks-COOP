@@ -1,7 +1,6 @@
 using UnityEngine;
 //Implemented by Andrei
-public class PlayerInteractManager : MonoBehaviour
-{
+public class PlayerInteractManager : MonoBehaviour {
     PlayerRefferenceMaster playerRefs;
     public bool hasInteracted;
     private void Awake() {

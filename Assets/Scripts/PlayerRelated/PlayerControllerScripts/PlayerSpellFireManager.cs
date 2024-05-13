@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
 //Implemented by Andrei
-public class PlayerSpellFireManager : MonoBehaviour
-{
+public class PlayerSpellFireManager : MonoBehaviour {
     public bool hasFired;
     public GameObject spell;
     PlayerRefferenceMaster playerRefMaster;
@@ -27,12 +26,12 @@ public class PlayerSpellFireManager : MonoBehaviour
     }
 
     IEnumerator Cooldown() { // Puts it on cooldown
-        canCast = false;    
+        canCast = false;
         yield return new WaitForSecondsRealtime(cooldownCasting);
         canCast = true;
 
     }
     private void Update() {
-        OnFire();   
+        OnFire();
     }
 }

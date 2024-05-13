@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 //Implemented by Andrei
 public class DialogueManager : MonoBehaviour {
     // Singleton
@@ -22,8 +21,7 @@ public class DialogueManager : MonoBehaviour {
     TextMeshProUGUI speakerUI;
     [SerializeField]
     TextMeshProUGUI speakerSentenceUI;
-
-    public List<PlayerInput> playerInputList;
+    SwapInputMode swapInputMode;
     private void Awake() {
         if(instance != null && instance != this) {
             Destroy(this.gameObject);
@@ -31,8 +29,8 @@ public class DialogueManager : MonoBehaviour {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
         speakerSentences = new Queue<string>();
+        swapInputMode = SwapInputMode.Instance;
     }
 
     public void StartDialogue(Dialogue dialogue) {
@@ -45,9 +43,7 @@ public class DialogueManager : MonoBehaviour {
 
         DisplayNextSentence();
         // Go in dialogue mode
-        foreach(PlayerInput playerInput in playerInputList) {
-            playerInput.SwitchCurrentActionMap("UI");
-        }
+        swapInputMode.gameObject.SetActive(false);
         dialogueCanvasGO.SetActive(true);
     } // When player interacts, it loads the sentences and switches player input to UI Mode
 
@@ -62,8 +58,6 @@ public class DialogueManager : MonoBehaviour {
     
     void EndDialogue() {
         dialogueCanvasGO.SetActive(false);
-        foreach(PlayerInput playerInput in playerInputList) {
-            playerInput.SwitchCurrentActionMap("Player");
-        }
+        swapInputMode.gameObject.SetActive(true);
     } // Hides UI and goes back to normal input mode
 }

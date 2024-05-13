@@ -1,7 +1,6 @@
 using UnityEngine;
 //Implemented by Andrei
-public class PlayerMovementManager : MonoBehaviour
-{
+public class PlayerMovementManager : MonoBehaviour {
     [SerializeField]
     private float MoveSpeed = 1f;
 
@@ -26,7 +25,7 @@ public class PlayerMovementManager : MonoBehaviour
     }
 
     void Move() {
-        if(inputVector != Vector2.zero ) {
+        if(inputVector != Vector2.zero) {
             anim.SetBool("IsIdle", false);
             DirectionSetter();
             AnimationProperties();
@@ -41,7 +40,7 @@ public class PlayerMovementManager : MonoBehaviour
             } else {
                 // If the future position would exceed the threshold distance, calculate a new movement vector towards the target
                 Vector3 directionToTarget = (targetDistanceGO.transform.position - transform.position).normalized;
-                rb.velocity = directionToTarget * (MoveSpeed* 4);
+                rb.velocity = directionToTarget * (MoveSpeed * 4);
             }
 
         } else {
@@ -70,6 +69,4 @@ public class PlayerMovementManager : MonoBehaviour
     void Update() {
         Move();
     }
-    
-
 }

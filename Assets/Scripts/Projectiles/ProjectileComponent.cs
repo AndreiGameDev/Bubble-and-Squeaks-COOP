@@ -1,7 +1,6 @@
 using UnityEngine;
 //Implemented by Andrei
-public class ProjectileComponent : MonoBehaviour
-{
+public class ProjectileComponent : MonoBehaviour {
     public DirFacing dirFacing;
     [SerializeField] private float projectileSpeed = 1f;
     Rigidbody2D rb;
@@ -37,5 +36,4 @@ public class ProjectileComponent : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

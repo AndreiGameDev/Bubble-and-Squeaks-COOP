@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2005,9 +2005,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306283904}
     m_Modifications:
+    - target: {fileID: 1224836000860661386, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224836000860661386, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224836000860661386, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284566296823783692, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
       propertyPath: m_Name
       value: Options Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284566296823783692, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741327362189754868, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741327362189754868, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741327362189754868, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911142896413280384, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911142896413280384, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598295831777286620, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598295831777286620, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4974088405488570519, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
       propertyPath: m_Pivot.x
@@ -2088,6 +2132,26 @@ PrefabInstance:
     - target: {fileID: 4974088405488570519, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053909749083359680, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053909749083359680, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053909749083359680, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752736440085817335, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752736440085817335, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8508082340247628805, guid: bbde21dbf2e823c479fda491c6a1b6d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

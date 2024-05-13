@@ -6,41 +6,59 @@ using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 //Implemented by Andrei
 public class PlayerInputHandler : MonoBehaviour {
+    private static PlayerInputHandler instance;
+    public static PlayerInputHandler Instance {
+        get {
+            return instance;
+        }
+    }
     private PlayerInput playerInput;
     private PlayerRefferenceMaster playerRefferenceMaster;
     private PlayerMovementManager playerMovementManagement;
     private PlayerSpellFireManager playerSpellFireManager;
     private PlayerInteractManager playerInteractManager;
-
+    private PlayerPause playerPause;
     private InputSystemUIInputModule uiInput;
     private void Awake() {
-        DontDestroyOnLoad(this);
+        if(instance != null && instance != this) {
+            Destroy(gameObject);
+        } else {
+            DontDestroyOnLoad(this);
+            instance = this;
+        }
         playerInput = GetComponent<PlayerInput>();
-        DialogueManager.Instance.playerInputList.Add(playerInput);
-
+        // Since this script spawns with each player input I can add it to SwapInputMode gameObject and it will always be able to toggle my InputMap
+        SwapInputMode.Instance.playerInputs.Add(playerInput);
+        // I want to load variables on different scene entries but also on awake so I'm storing it in a variable
         LoadVariables();
         SceneManager.sceneLoaded += OnSceneLoaded;
+        // Shouldn't need to set the uiInput again as it's in PlayerManager prefab
         uiInput = FindAnyObjectByType<InputSystemUIInputModule>();
         playerInput.uiInputModule = uiInput;
     }
-
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         LoadVariables();
     }
+    // Small Script to ensure that both players can use the dialogue system simultaneously
     public void TakeControlOverInput() {
         uiInput.actionsAsset = playerInput.actions;
     }
-    void LoadVariables() {
+    // Finds every player reference script and matches it with the corresponding index then loads in variables.
+    void LoadVariables() { 
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
         playerRefferenceMaster = PlayerRefferenceMasters.FirstOrDefault(m => m.GetPlayerIndex() == playerIndex);
         playerMovementManagement = playerRefferenceMaster.movementManager;
         playerSpellFireManager = playerRefferenceMaster.spellFireManager;
         playerInteractManager = playerRefferenceMaster.interactManager;
+        playerPause = playerRefferenceMaster.playerPause;
     }
+
+    //Removes playerinput from swap input mode since it means this player input no longer exists
     private void OnDisable() {
-        DialogueManager.Instance.playerInputList.Remove(playerInput);
+        SwapInputMode.Instance.playerInputs.Remove(playerInput);
     }
+
     public void OnMovementInput(CallbackContext context) {
         if(playerMovementManagement != null) {
             playerMovementManagement.SetMovementDir(context.ReadValue<Vector2>());
@@ -56,6 +74,12 @@ public class PlayerInputHandler : MonoBehaviour {
     public void OnInteractInput(CallbackContext context) {
         if(playerInteractManager != null) {
             playerInteractManager.hasInteracted = context.ReadValueAsButton();
+        }
+    }
+
+    public void OnPauseInput(CallbackContext context) {
+        if(playerPause != null) {
+            playerPause.hasPressedPause = context.ReadValueAsButton();
         }
     }
 

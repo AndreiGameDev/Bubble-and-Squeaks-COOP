@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 //Implemented by Andrei
 public class AudioManager : MonoBehaviour {
-    private static AudioManager _instance;
+    private static AudioManager instance;
     public static AudioManager Instance {
         get {
-            return _instance;
+            return instance;
         }
     }
     [Header("Audio Source")]
@@ -19,10 +19,10 @@ public class AudioManager : MonoBehaviour {
 
 
     private void Awake() {
-        if(_instance != null && _instance != this) {
+        if(instance != null && instance != this) {
             Destroy(this.gameObject);
         } else {
-            _instance = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
     }
