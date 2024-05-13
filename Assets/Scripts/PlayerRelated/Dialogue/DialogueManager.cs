@@ -24,12 +24,15 @@ public class DialogueManager : MonoBehaviour {
     SwapInputMode swapInputMode;
     private void Awake() {
         if(instance != null && instance != this) {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         } else {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
         speakerSentences = new Queue<string>();
+        
+    }
+    private void Start() {
         swapInputMode = SwapInputMode.Instance;
     }
 

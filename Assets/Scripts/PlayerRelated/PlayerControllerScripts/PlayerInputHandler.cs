@@ -20,34 +20,33 @@ public class PlayerInputHandler : MonoBehaviour {
     private PlayerPause playerPause;
     private InputSystemUIInputModule uiInput;
     private void Awake() {
-        if(instance != null && instance != this) {
-            Destroy(gameObject);
-        } else {
             DontDestroyOnLoad(this);
-            instance = this;
-        }
         playerInput = GetComponent<PlayerInput>();
         // Since this script spawns with each player input I can add it to SwapInputMode gameObject and it will always be able to toggle my InputMap
         SwapInputMode.Instance.playerInputs.Add(playerInput);
         // I want to load variables on different scene entries but also on awake so I'm storing it in a variable
         LoadVariables();
-        SceneManager.sceneLoaded += OnSceneLoaded;
         // Shouldn't need to set the uiInput again as it's in PlayerManager prefab
         uiInput = FindAnyObjectByType<InputSystemUIInputModule>();
         playerInput.uiInputModule = uiInput;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         LoadVariables();
     }
     // Small Script to ensure that both players can use the dialogue system simultaneously
     public void TakeControlOverInput() {
-        uiInput.actionsAsset = playerInput.actions;
+        if(uiInput != null) {
+            uiInput.actionsAsset = playerInput.actions;
+        }
     }
     // Finds every player reference script and matches it with the corresponding index then loads in variables.
     void LoadVariables() { 
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
         playerRefferenceMaster = PlayerRefferenceMasters.FirstOrDefault(m => m.GetPlayerIndex() == playerIndex);
+        
         playerMovementManagement = playerRefferenceMaster.movementManager;
         playerSpellFireManager = playerRefferenceMaster.spellFireManager;
         playerInteractManager = playerRefferenceMaster.interactManager;

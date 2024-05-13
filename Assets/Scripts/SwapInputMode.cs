@@ -20,14 +20,19 @@ public class SwapInputMode : MonoBehaviour {
     }
     // When disabled set player input action maps to UI Mode
     private void OnDisable() {
-        foreach(PlayerInput player in playerInputs) {
-            player.SwitchCurrentActionMap("UI");
+        if(playerInputs.Count > 0) {
+            foreach(PlayerInput player in playerInputs) {
+                player.SwitchCurrentActionMap("UI");
+            }
         }
     }
     // When Enabled set player input action maps to Player Mode
     private void OnEnable() {
-        foreach(PlayerInput player in playerInputs) {
-            player.SwitchCurrentActionMap("Player");
+        if(playerInputs.Count > 0) {
+            foreach(PlayerInput player in playerInputs) {
+                player.SwitchCurrentActionMap("Player");
+            }
         }
+        
     }
 }

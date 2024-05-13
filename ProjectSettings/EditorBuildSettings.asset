@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FinishedLevels/DoorMazePuzzle/DoorPuzzleVar1.unity
     guid: 1b1938a5e7ff0b64191d496637637dcd
   - enabled: 1
+    path: Assets/Scenes/FinishedLevels/DoorMazePuzzle/DoorPuzzleVar2.unity
+    guid: 6e939adf4a8ce4740aee2574117354ad
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/DoorMazePuzzle/Door PuzzleVar3.unity
+    guid: df011ca17d1936c4a8f0d5e738801deb
+  - enabled: 1
     path: Assets/Scenes/FinishedLevels/LeverPuzzle/LeverPuzzle.unity
     guid: fea28b3f1014207479fe72044ac9873d
   - enabled: 1
@@ -29,10 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/Tutorial/Tutorial Level.unity
     guid: be5910d429e080244b67eae664ddcdb4
-  - enabled: 1
-    path: Assets/Scenes/FinishedLevels/DoorMazePuzzle/Door PuzzleVar3.unity
-    guid: df011ca17d1936c4a8f0d5e738801deb
-  - enabled: 1
-    path: Assets/Scenes/FinishedLevels/DoorMazePuzzle/DoorPuzzleVar2.unity
-    guid: 6e939adf4a8ce4740aee2574117354ad
   m_configObjects: {}
