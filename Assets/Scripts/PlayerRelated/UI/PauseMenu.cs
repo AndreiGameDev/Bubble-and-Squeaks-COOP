@@ -15,6 +15,9 @@ public class PauseMenu : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
         swapInputMode = SwapInputMode.Instance;
+        
+    }
+    private void Start() {
         gameObject.SetActive(false);
     }
     private void OnEnable() {
