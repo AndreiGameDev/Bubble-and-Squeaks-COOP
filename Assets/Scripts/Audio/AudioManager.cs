@@ -33,9 +33,9 @@ public class AudioManager : MonoBehaviour {
         sfx.PlayOneShot(clip);
     }
     void OnSceneChange(Scene currentScene, Scene nextScene) {
-        foreach(int i in PlayerLevelScenes.instance.GetPlayerLevelScenes()) {
+        foreach(int i in PlayerLevelScenes.Instance.GetPlayerLevelScenes()) {
             if(nextScene.buildIndex == i) {
-                if(PlayerLevelScenes.instance.GetPlayerLevelScenes().Contains(currentScene.buildIndex) && music.clip != M_Game) {
+                if(PlayerLevelScenes.Instance.GetPlayerLevelScenes().Contains(currentScene.buildIndex) && music.clip != M_Game) {
                     music.clip = M_Game;
                     music.Play();
                 }

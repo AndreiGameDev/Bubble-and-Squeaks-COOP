@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPressedPause: 0
+  playerInputList: []
 --- !u!1 &272625350808587650
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPressedPause: 0
+  playerInputList: []
 --- !u!1 &2393873621381721557
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,27 +706,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 702868862251611659, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.672203
+      value: -13.172203
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_Targets.Array.data[0].radius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_Targets.Array.data[0].target
       value: 
       objectReference: {fileID: 7175743803155115571}
     - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
+      propertyPath: m_Targets.Array.data[1].radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979291403205114162, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_Targets.Array.data[1].target
       value: 
       objectReference: {fileID: 7071538379441024544}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -531.8502
+      value: -532.1988
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -351.2508
+      value: -350.85547
       objectReference: {fileID: 0}
     - target: {fileID: 4660081456343429670, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.672203
+      value: -13.149939
       objectReference: {fileID: 0}
     - target: {fileID: 5088549884974500261, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -772,15 +782,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6536877190412864863, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: orthographic size
-      value: 1.318604
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 9018471838703693359, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -531.6387
+      value: -531.4835
       objectReference: {fileID: 0}
     - target: {fileID: 9018471838703693359, guid: 365728d7bfff4854587c073f5f1cdabe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1593585
+      value: -2.1581025
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

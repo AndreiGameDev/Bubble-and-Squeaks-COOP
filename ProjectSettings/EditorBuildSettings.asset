@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FinishedLevels/Menu/MainMenu.unity
     guid: 3156e555d25244e4fbce1b2f52b8cd42
   - enabled: 1
-    path: Assets/Scenes/FinishedLevels/Town/Town Level.unity
+    path: Assets/Scenes/FinishedLevels/Town/Town Corrupted.unity
     guid: 975f6359cda771e4199311efaf217f41
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/BlockPush/Block Push Level.unity
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/Tutorial/Tutorial Level.unity
     guid: be5910d429e080244b67eae664ddcdb4
+  - enabled: 1
+    path: Assets/Scenes/FinishedLevels/Town/Town Uncorrupted.unity
+    guid: d5cd3b1908b55234e8d83d8c8ab1d46f
   m_configObjects: {}

@@ -6,6 +6,9 @@ public class MenuScript : MonoBehaviour {
         SceneManager.LoadScene(destination);
     }
 
+    public void ResetProgres() {
+        PlayerPrefs.DeleteKey("LastPlayedLevel");
+    }
     public void Quit() {
         Application.Quit();
     }

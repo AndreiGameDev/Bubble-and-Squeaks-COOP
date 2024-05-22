@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //Implemented by jack improved by Andrei
@@ -23,7 +24,12 @@ public class PauseMenu : MonoBehaviour {
         
     }
     public void OnDisable() {
-        swapInputMode.gameObject.SetActive(true);
+        if(instance != this) {
+            return;
+        }
+        if(swapInputMode.IsDestroyed() != true) {
+            swapInputMode.gameObject.SetActive(true);
+        }
         Time.timeScale = 1f;
     }
     public void MainMenuButton() {

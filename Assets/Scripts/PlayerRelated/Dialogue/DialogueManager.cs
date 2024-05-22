@@ -30,9 +30,6 @@ public class DialogueManager : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
         speakerSentences = new Queue<string>();
-        
-    }
-    private void Start() {
         swapInputMode = SwapInputMode.Instance;
     }
 
