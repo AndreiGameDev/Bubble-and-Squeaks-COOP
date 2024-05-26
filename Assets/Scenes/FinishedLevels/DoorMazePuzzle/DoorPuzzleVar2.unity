@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3760,7 +3759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7373515415936732200, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: orthographic size
-      value: 1.6702317
+      value: 1.399438
       objectReference: {fileID: 0}
     - target: {fileID: 8331859903343245452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9187,10 +9186,7 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: 
     sentences:
-    - 'You must find these mushrooms in the forest.
-
-      Light them up, and plunge
-      the others into darkness.'
+    - Combine dark and light to open the path before you.
   SFX_OpenDialogue: {fileID: 8300000, guid: 73bbb572623a7cc4d8e278297dcedcbc, type: 3}
 --- !u!114 &2129445522976115583
 MonoBehaviour:
@@ -9207,7 +9203,9 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Stone Tablet
     sentences:
-    - Left
+    - 'The sun, the stars, they are made of me.
+
+      What am I?'
   SFX_OpenDialogue: {fileID: 8300000, guid: 73bbb572623a7cc4d8e278297dcedcbc, type: 3}
 --- !u!114 &2129445523598774463
 MonoBehaviour:
@@ -9224,7 +9222,10 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Stone Tablet
     sentences:
-    - Right
+    - 'Both Greeks and Romans alike worshipped Erebos. Erebos is me, I am Erebos.
+
+      What
+      am I? '
   SFX_OpenDialogue: {fileID: 8300000, guid: 73bbb572623a7cc4d8e278297dcedcbc, type: 3}
 --- !u!114 &2129445523930821997
 MonoBehaviour:
@@ -9241,7 +9242,9 @@ MonoBehaviour:
   dialogue:
     dialogueOwner: Stone Tablet
     sentences:
-    - Left
+    - 'I attract creatures in the night. Moths adore me.
+
+      What am I?'
   SFX_OpenDialogue: {fileID: 8300000, guid: 73bbb572623a7cc4d8e278297dcedcbc, type: 3}
 --- !u!212 &4739630549457811890
 SpriteRenderer:
