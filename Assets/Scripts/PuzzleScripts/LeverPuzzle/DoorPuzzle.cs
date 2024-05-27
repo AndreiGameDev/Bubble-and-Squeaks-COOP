@@ -8,6 +8,7 @@ public class DoorPuzzle : MonoBehaviour
     public Transform FlowerHolder;
     [SerializeField] int correctLeversPulled;
     public UnityEvent doorOpen;
+    [SerializeField] AudioClip doorOpenSFX;
     private void Start() {
         for(int i = 0; i < FlowerHolder.childCount; i++) {
             FlowerLever flowerLever = FlowerHolder.GetChild(i).GetComponent<FlowerLever>();

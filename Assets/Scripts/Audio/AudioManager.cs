@@ -15,7 +15,6 @@ public class AudioManager : MonoBehaviour {
 
     [Header("Music")]
     [SerializeField] AudioClip M_MainMenu;
-    [SerializeField] AudioClip M_Game;
 
 
     private void Awake() {
@@ -35,11 +34,8 @@ public class AudioManager : MonoBehaviour {
     void OnSceneChange(Scene currentScene, Scene nextScene) {
         foreach(int i in PlayerLevelScenes.Instance.GetPlayerLevelScenes()) {
             if(nextScene.buildIndex == i) {
-                if(PlayerLevelScenes.Instance.GetPlayerLevelScenes().Contains(currentScene.buildIndex) && music.clip != M_Game) {
-                    music.clip = M_Game;
-                    music.Play();
-                }
-            } else {
+                music.Stop();
+            } else if(nextScene.buildIndex == 0) {
                 music.clip = M_MainMenu;
                 music.Play();
             }

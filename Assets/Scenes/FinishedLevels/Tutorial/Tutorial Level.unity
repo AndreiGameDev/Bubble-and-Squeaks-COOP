@@ -230,15 +230,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.321
+      value: 0.32064012
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.76
+      value: 7.3710003
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.001
+      value: -0.0009874352
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -373,7 +373,19 @@ MonoBehaviour:
   correctLeversPulled: 0
   doorOpen:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 154677898}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &154677900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2936,7 +2948,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: afc782d15268d884ab94550d9c33ae9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2957,7 +2969,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.322, y: 0.011, z: 0}
-  m_LocalScale: {x: 0.625, y: 0.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2998,7 +3010,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3154,7 +3166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8331859903343245452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.29
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 8331859903343245452, guid: 7c49e92c5d0b5da41b8505982656e75a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5319,7 +5331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.883
+      value: 9.266
       objectReference: {fileID: 0}
     - target: {fileID: 6851853066955420045, guid: 748dcdea3f2c96d44a6d3db488624c4e, type: 3}
       propertyPath: m_LocalPosition.z

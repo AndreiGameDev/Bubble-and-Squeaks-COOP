@@ -99,8 +99,6 @@ MonoBehaviour:
   requireBothAttributes: 1
   lightActivated: 0
   darkActivated: 0
-  combinedDoor: {fileID: 5372800443472353075}
-  combinedDoorActivationWindow: {fileID: 6078245501752872087}
   openDoor:
     m_PersistentCalls:
       m_Calls:
@@ -170,9 +168,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  SFX_OpenDoor: {fileID: 0}
-  SFX_ActivationWindowOpen: {fileID: 0}
-  SFX_ActivationWindowOver: {fileID: 0}
+  SFX_OpenDoor: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
+  SFX_ActivationWindowOpen: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
+  SFX_ActivationWindowOver: {fileID: 8300000, guid: 0ffd66801525f7c40803f826978a9bef, type: 3}
 --- !u!61 &810411682955316396
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -320,8 +318,6 @@ MonoBehaviour:
   requireBothAttributes: 0
   lightActivated: 0
   darkActivated: 0
-  combinedDoor: {fileID: 0}
-  combinedDoorActivationWindow: {fileID: 0}
   openDoor:
     m_PersistentCalls:
       m_Calls:
@@ -343,9 +339,9 @@ MonoBehaviour:
   combinedDoorDeactivated:
     m_PersistentCalls:
       m_Calls: []
-  SFX_OpenDoor: {fileID: 0}
-  SFX_ActivationWindowOpen: {fileID: 0}
-  SFX_ActivationWindowOver: {fileID: 0}
+  SFX_OpenDoor: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
+  SFX_ActivationWindowOpen: {fileID: 8300000, guid: 9ca0e7958f726c14b9db827c4a73023b, type: 3}
+  SFX_ActivationWindowOver: {fileID: 8300000, guid: 0ffd66801525f7c40803f826978a9bef, type: 3}
 --- !u!61 &6267082189837582850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -661,8 +657,6 @@ MonoBehaviour:
   requireBothAttributes: 0
   lightActivated: 0
   darkActivated: 0
-  combinedDoor: {fileID: 0}
-  combinedDoorActivationWindow: {fileID: 0}
   openDoor:
     m_PersistentCalls:
       m_Calls:

@@ -90,4 +90,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bf0835f9c0e214296d55f0b4d2b1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MazeScenes: 040000000500000006000000
+  MazeScenes: 050000000600000007000000
