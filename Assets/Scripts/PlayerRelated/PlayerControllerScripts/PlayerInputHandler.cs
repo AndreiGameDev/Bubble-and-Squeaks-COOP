@@ -20,7 +20,7 @@ public class PlayerInputHandler : MonoBehaviour {
     private PlayerPause playerPause;
     private InputSystemUIInputModule uiInput;
     private void Awake() {
-            DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this);
         playerInput = GetComponent<PlayerInput>();
         // Since this script spawns with each player input I can add it to SwapInputMode gameObject and it will always be able to toggle my InputMap
         SwapInputMode.Instance.playerInputs.Add(playerInput);
@@ -30,7 +30,7 @@ public class PlayerInputHandler : MonoBehaviour {
         uiInput = FindAnyObjectByType<InputSystemUIInputModule>();
         playerInput.uiInputModule = uiInput;
         SceneManager.sceneLoaded += OnSceneLoaded;
-        
+
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         LoadVariables();
@@ -42,11 +42,10 @@ public class PlayerInputHandler : MonoBehaviour {
         }
     }
     // Finds every player reference script and matches it with the corresponding index then loads in variables.
-    void LoadVariables() { 
+    void LoadVariables() {
         var PlayerRefferenceMasters = FindObjectsOfType<PlayerRefferenceMaster>();
         var playerIndex = playerInput.playerIndex;
         playerRefferenceMaster = PlayerRefferenceMasters.FirstOrDefault(m => m.GetPlayerIndex() == playerIndex);
-        
         playerMovementManagement = playerRefferenceMaster.movementManager;
         playerSpellFireManager = playerRefferenceMaster.spellFireManager;
         playerInteractManager = playerRefferenceMaster.interactManager;
@@ -56,6 +55,7 @@ public class PlayerInputHandler : MonoBehaviour {
     //Removes playerinput from swap input mode since it means this player input no longer exists
     private void OnDisable() {
         SwapInputMode.Instance.playerInputs.Remove(playerInput);
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void OnMovementInput(CallbackContext context) {

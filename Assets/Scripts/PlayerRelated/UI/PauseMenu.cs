@@ -36,8 +36,16 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1f;
     }
     public void MainMenuButton() {
-        SceneManager.LoadScene("MainMenu");
+        Destroy(SwapInputMode.Instance.gameObject);
+        var playerInputs = FindObjectsOfType<PlayerInputHandler>();
+        foreach(PlayerInputHandler pInput in playerInputs) {
+            Destroy(pInput.gameObject);
+        }
+        Destroy(ControllerCalibration.Instance.gameObject);
+        Destroy(DialogueManager.Instance.gameObject);
         Destroy(gameObject);
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
     }
 
     public void Reset() {
