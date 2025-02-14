@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FinishedLevels/Menu/MainMenu.unity
+    path: Assets/Scenes/Menu/MainMenu.unity
     guid: 3156e555d25244e4fbce1b2f52b8cd42
   - enabled: 1
     path: Assets/Scenes/FinishedLevels/Town/Town Corrupted.unity
