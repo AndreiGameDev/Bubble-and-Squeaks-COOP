@@ -1,4 +1,7 @@
-# ProjectC
+# Bubble and Squeak CO-OP Game
+
+Controlls:
+
 
 External Resources Used Bibliography:
 
