@@ -2,7 +2,7 @@
 *A cooperative puzzle-solving game featuring riddles and interactive mechanics.*  
 
 ## **Gameplay Presentation**  
-[![Gameplay Presentation](https://img.youtube.com/vi/toPcVwsPYqI/maxresdefault.jpg)](https://youtu.be/toPcVwsPYqI)  
+[![Gameplay Presentation](https://github.com/user-attachments/assets/72857551-4350-4551-a998-20b712e863f5)](https://youtu.be/toPcVwsPYqI)  
 
 ---
 
