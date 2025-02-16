@@ -17,7 +17,7 @@ _A cooperative puzzle-solving game featuring riddles and interactive mechanics._
 
 ## Team Credits
 
-- **Andrei** – Programming
+- **Andrei-Ionut Bila-Nicola** – Programming
 - **Alex Ross** – Designing Levels and Documentary
 - **AstonMilisic** – Level Design
 - **Mae Organ** – Art (Models and Tilemaps)
